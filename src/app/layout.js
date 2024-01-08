@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <div className=" bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-no-repeat h-[3000px] overflow-x-hidden">
+        <div className="bg-gradient-to-l from-[#EEF4F9] from-10% via-[#EAF7F5] via-30% to-[#EEF4F9] to-90% bg-no-repeat overflow-x-hidden">
           <NavBar />
           {children}
         </div>
