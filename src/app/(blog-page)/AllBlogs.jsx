@@ -32,7 +32,7 @@ const AllBlogs = () => {
       <TitleAndContentGap />
       <div className="grid grid-rows-2 grid-flow-col lg:gap-8">
         {blogs.map((blog, index) => {
-          return <SingleBlog blog={blog} />;
+          return <SingleBlog blog={blog} key={index} />;
         })}
       </div>
     </SectionsWrapper>
