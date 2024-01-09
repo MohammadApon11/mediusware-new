@@ -10,7 +10,7 @@ const CommonHero = () => {
         <span className="text-[#344054]">Blog</span>
       </div>
       <div className="mx-auto text-center 2xl:mt-[76px] xl:mt-[50px] lg:mt-[35px] md:mt-[50px] sm:mt-[45px] xs:mt-[40px]">
-        <h1 className="text-[#002B4F] 2xl:text-[80px] xl:text-[70px] lg:text-[55px] md:text-[45px] sm:text-[45px] xs:text-[26px] font-bold">READ INSIGHTFUL <span className="text-[#00A88E]"><br className="md:hidden" /> ARTICLES</span></h1>
+        <h1 className="text-[#002B4F] 2xl:text-[80px] xl:text-[70px] lg:text-[55px] md:text-[45px] sm:text-[45px] xs:text-[32px] font-bold">READ INSIGHTFUL <span className="text-[#00A88E]"><br className="md:hidden" /> ARTICLES</span></h1>
         <h3 className="2xl:text-[48px] xl:text-[40px] lg:text-[35px] md:text-[27px] sm:text-[24px] xs:text-[16px] xxs:text-[15px] xxs:max-lg:mt-[12px] text-[#002B4F]  font-semibold">Join 1,50,000+ Subscribers</h3>
         <form className="xl:w-[832px] lg:w-[750px] md:w-[600px] sm:w-[350px] mobile:w-[350px] xs:max-mobile:max-w-[280px] xxs:w-[235px] 2xl:h-[64px] xl:h-[57px] lg:h-[55px] md:h-[53px] mobile:h-[48px] xxs:h-[40px] 2xl:mt-[48px] xl:mt-[35px] lg:mt-[30px] md:mt-[30px] xs:mt-[20px] xxs:max-mobile:px-2 mx-auto relative">
           <input className="bg-white outline-none h-full w-full 2xl:rounded-[16px] xl:rounded-[13px] lg:rounded-[10px] xs:rounded-[16px] mobile:pl-[32px] xxs:pl-[23px] xxs:max-mobile:text-[12px]" type="text" placeholder="Email Address" />

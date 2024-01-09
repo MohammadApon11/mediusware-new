@@ -4,15 +4,18 @@ import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import React from "react";
 import AllBlogs from "./AllBlogs";
+import LatestBlogs from "./LatestBlogs";
 
 const BlogPage = () => {
   return (
-    <div>
+    <>
       <PaddingTop />
       <CommonHero />
       <SectionsGap />
       <AllBlogs />
-    </div>
+      <SectionsGap />
+      <LatestBlogs />
+    </>
   );
 };
 
