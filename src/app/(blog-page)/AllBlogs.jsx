@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import FilterBtn from "@/components/shared/FilterBtn";
 import SectionsHeader from "@/components/shared/SectionsHeader";
 import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
-import { BlogData } from "@/data/BlogData";
+import { BlogsData } from "@/data/BlogData";
 import SingleBlog from "./SingleBlog";
 import { CiSearch } from "react-icons/ci";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import LoadMoreBtn from "@/components/shared/button's/LoadMoreBtn";
 
 const AllBlogs = () => {
-  const [blogs, setBlogs] = useState(BlogData);
+  const [blogs, setBlogs] = useState(BlogsData);
 
   return (
     <SectionsWrapper>

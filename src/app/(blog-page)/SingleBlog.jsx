@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { mdOutlineWatchLater } from "react-icons/md";
+import { MdOutlineWatchLater } from "react-icons/md";
 import cardVector from "../../assets/blog-page/card-vector.png";
 import mobileVector from "../../assets/blog-page/mobile-vector.png";
 
@@ -10,15 +10,15 @@ const SingleBlog = ({ blog }) => {
     <div
       className={` ${
         id === 1 ? "grid-cols-6 row-span-2" : "grid-cols-2 row-span-1"
-      } relative rounded-[16px] group`}
+      } relative rounded-[16px] group overflow-hidden`}
     >
       <div className="hidden group-hover:block">
         <div className="absolute -top-[1px] right-0 flex items-center xl:gap-2 lg:gap-[6px]  xl:text-[16px] lg:text-[14px] xl:px-[24px] lg:px-[18px] xl:py-[8px] lg:py-[6px] rounded-bl-[16px] rounded-tr-[16px] font-semibold  text-[#0060AF] bg-[#E6EFF7]">
-          <mobileOutlineWatchLater /> <span>{readTime}</span> min read time
+          <MdOutlineWatchLater  /> <span>{readTime}</span> min read time
         </div>
       </div>
       <Image
-        className={`rounded-[16px] md:h-[480px] sm:h-[430px] mobile:h-[360px] xs:h-[260px] ${
+        className={`rounded-[16px] md:h-[480px] sm:h-[430px] mobile:h-[360px] xs:h-[260px] transition-all hover:duration-300 hover:transform hover:scale-125 ${
           id === 1 ? "w-[100%] lg:h-[100%]" : "w-[100%] lg:h-[100%] "
         } bg-cover`}
         src={image?.src}
