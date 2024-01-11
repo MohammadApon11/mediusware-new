@@ -35,9 +35,19 @@ const Footer = () => {
         height={61}
       />
       <div className="absolute top-[100px] right-[100px]">
-          <Image className="" src={footerVector3} width={70} height={70} />
-          <Image className="-mt-[39px]" src={footerVector4} width={50} height={281} />
-          <Image className="-mt-[36px] ml-[3px]" src={footerVector5} width={70} height={70} />
+        <Image className="" src={footerVector3} width={70} height={70} />
+        <Image
+          className="-mt-[39px]"
+          src={footerVector4}
+          width={50}
+          height={281}
+        />
+        <Image
+          className="-mt-[36px] ml-[3px]"
+          src={footerVector5}
+          width={70}
+          height={70}
+        />
       </div>
       <div className="w-[1320px] pt-[136px] pb-[80px]  mx-auto text-white">
         <div className="grid grid-cols-5 gap-[48px] border-b border-[#475467] pb-[24px]">
@@ -112,7 +122,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center pb-[35px] text-white">
-        &copy; {currentYear} Mediusware. All Rights Reserved
+        © {currentYear} Mediusware. All Rights Reserved
       </p>
     </div>
   );
