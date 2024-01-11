@@ -9,13 +9,13 @@ module.exports = {
     extend: {
       screens: {
         // extra extra small
-        xxs:"0px",
+        xxs: "0px",
 
-        // // extra small 
-        xs:"250px",
+        // // extra small
+        xs: "250px",
 
-        // regular mobile 
-        mobile:"380px",
+        // regular mobile
+        mobile: "380px",
 
         // => @media (min-width: 640px) { ... }
         tablet: "640px",
@@ -28,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

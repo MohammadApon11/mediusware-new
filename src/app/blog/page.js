@@ -1,13 +1,14 @@
+import SubscribeBox from "@/components/shared/SubscribeBox";
+import TrendingBlogs from "@/components/shared/TrendingBlogs";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
+import Meeting from "@/components/shared/meeting";
 import React from "react";
 
 const BlogPage = () => {
   return (
     <div>
       <PaddingTop />
-      <p className="text-5xl mt-20 text-white flex items-center justify-center">
-        BlogPage
-      </p>
+      Blog page
     </div>
   );
 };

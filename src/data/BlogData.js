@@ -190,3 +190,77 @@ export const PopularBlogsData = [
     readTime: 20,
   },
 ];
+export const LikedBlogsData = [
+  {
+    id: 1,
+    authors: {
+      name: "John Smith",
+      publishDate: "01/01/2015",
+      photo: profile,
+    },
+    keys: ["UI/UX", "Design"],
+    title: "UX Lessons That We Can Learn from “Threads”",
+    image: blog4,
+    readTime: 12,
+  },
+  {
+    id: 2,
+    authors: {
+      name: "Will Smith",
+      publishDate: "01/01/2015",
+      photo: profile,
+    },
+    keys: ["Developer", "Coding"],
+    title: "UX Lessons That We Can Learn from “Threads”",
+    image: blog4,
+    readTime: 15,
+  },
+  {
+    id: 3,
+    authors: {
+      name: "Justin Beiber",
+      publishDate: "01/01/2015",
+      photo: profile,
+    },
+    keys: ["Marketing", "Client"],
+    title: "UX Lessons That We Can Learn from “Threads”",
+    image: blog4,
+    readTime: 20,
+  },
+  {
+    id: 4,
+    authors: {
+      name: "Justin Beiber",
+      publishDate: "01/01/2015",
+      photo: profile,
+    },
+    keys: ["Marketing", "Client"],
+    title: "UX Lessons That We Can Learn from “Threads”",
+    image: blog4,
+    readTime: 20,
+  },
+  {
+    id: 5,
+    authors: {
+      name: "Justin Beiber",
+      publishDate: "01/01/2015",
+      photo: profile,
+    },
+    keys: ["Marketing", "Client"],
+    title: "UX Lessons That We Can Learn from “Threads”",
+    image: blog4,
+    readTime: 20,
+  },
+  {
+    id: 6,
+    authors: {
+      name: "Justin Beiber",
+      publishDate: "01/01/2015",
+      photo: profile,
+    },
+    keys: ["Marketing", "Client"],
+    title: "UX Lessons That We Can Learn from “Threads”",
+    image: blog4,
+    readTime: 20,
+  },
+];

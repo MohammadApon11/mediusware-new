@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import similarBlogsVector from "../../assets/blog-page/similar-blogs-vector.png";
 import { MdOutlineWatchLater } from "react-icons/md";
+import Link from "next/link";
 
 const SimilarBlogs = ({ blog }) => {
   const { image, authors, title, id, keys, readTime } = blog;
   return (
-    <div className="relative group overflow-hidden rounded-[16px]">
+    <Link href={"blogs-details"} className="relative group overflow-hidden rounded-[16px]">
       <Image
         className="bg-cover rounded-[16px] h-[440px] transition-all hover:duration-300 hover:transform hover:scale-125"
         src={image?.src}
@@ -47,7 +48,7 @@ const SimilarBlogs = ({ blog }) => {
           {title}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
