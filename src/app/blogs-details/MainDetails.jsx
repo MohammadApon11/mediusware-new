@@ -288,7 +288,7 @@ const MainDetails = () => {
                   />
                   <div className="text-[14px]">
                     <p className="text-[#111928] font-semibold">Bonnie Green</p>
-                    <p className="text-[#4B5563]">Nov 15 '22 </p>
+                    <p className="text-[#4B5563]">Nov 15 &apos;22 </p>
                   </div>
                 </div>
                 <p className="text-[#6B7280] text-[16px] mt-[12px]">

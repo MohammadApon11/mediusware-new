@@ -9,7 +9,7 @@ const NotFound = () => {
       <h1 className="text-[#002B4F] text-[48px] mt-[32px] font-bold">
         No Data <span className="text-[#00A88E]">Found</span>
       </h1>
-      <p className="text-[18px] text-[#002B4F] mt-[24px]">"We couldn't find any results for your search😕 Explore our latest articles below. Happy reading! 📚"</p>
+      <p className="text-[18px] text-[#002B4F] mt-[24px]">"We couldn&apos;t find any results for your search😕 Explore our latest articles below. Happy reading! 📚"</p>
     </div>
   );
 };

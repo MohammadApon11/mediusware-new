@@ -12,7 +12,6 @@ import MobileNav from "./MobileNav";
 
 const NavBar = () => {
   return (
-    // ${currentPathName.startsWith("/") && "sticky -top-0"}
     <div className={`fixed w-[100%] top-0 z-50`}>
       <div className="nav-bg 2xl:h-[44px] xl:h-[38px] lg:h-[35px] md:h-[55px] sm:h-[45px] mobile:h-[40px] xxs:h-[45px]">
         <div className="mx-auto flex  items-center justify-between bigMon:w-[1696px] 2xl:w-[1400px] xl:w-[1200px] lg:w-[950px] md:w-[700px] xxs:max-md:w-[100%] mobile:max-md:px-5 xxs:max-md:px-2 2xl:pt-[12px] lg:pt-[8px] md:pt-4 mobile:max-md:pt-[13px] xxs:pt-[9px]  xxs:max-mobile:flex-col xxs:max-sm:gap-[4px]">

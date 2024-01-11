@@ -17,7 +17,9 @@ const FilterBtn = () => {
           } ${activeBtn !== item?.name && "text-[#475467]"}`}
         >
           <span className="font-semibold">{item?.name}</span>{" "}
-          <span className="xl:text-[14px] lg:text-[12px] sm:max-lg:text-[11px] 2xl:ml-3 xl:ml-[10px] lg:ml-[8px]">{item.length}</span>
+          <span className="xl:text-[14px] lg:text-[12px] sm:max-lg:text-[11px] 2xl:ml-3 xl:ml-[10px] lg:ml-[8px]">
+            {item.length}
+          </span>
         </button>
       ))}
     </div>

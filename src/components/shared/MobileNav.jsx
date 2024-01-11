@@ -45,10 +45,20 @@ const MobileNav = () => {
         <ul className="flex flex-col">
           {NavData.map((path, index) => (
             <Link
-              href={path === "HOME" ? "/" : path === "WHY MEDIUSWARE" ? "why-mediusware" : path === "OUR TEAM" ? "our-team" : path.toLowerCase()}
+              href={
+                path === "HOME"
+                  ? "/"
+                  : path === "WHY MEDIUSWARE"
+                  ? "why-mediusware"
+                  : path === "OUR TEAM"
+                  ? "our-team"
+                  : path.toLowerCase()
+              }
               className={`md:py-[15px] sm:py-[12px] mobile:py-[12px] xxs:py-[14px] text-[#002B4F] font-semibold ${
                 path === "SERVICES" && "flex items-center justify-between group"
-              } ${activeRoute === `/${path.toLowerCase()}` && "text-secondary"}`}
+              } ${
+                activeRoute === `/${path.toLowerCase()}` && "text-secondary"
+              }`}
               key={index}
             >
               {path}

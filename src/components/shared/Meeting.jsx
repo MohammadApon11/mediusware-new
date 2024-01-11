@@ -13,7 +13,7 @@ const Meeting = () => {
       <p className="text-[#667085] text-[18px] mt-[15px]">
         Empower your vision with us – your reliable software development
         partner. We turn ideas into excellence, delivering precision and
-        innovation. Let's shape success together.
+        innovation. Let&apos;s shape success together.
       </p>
       <CommonArrowBtn>Get Free Consultaion</CommonArrowBtn>
     </div>
