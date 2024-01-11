@@ -2,7 +2,12 @@ import profile from "../assets/blog-page/profile-1.png";
 import blog1 from "../assets/blog-page/blog-1.png";
 import blog2 from "../assets/blog-page/blog-2.png";
 import blog3 from "../assets/blog-page/blog-3.png";
-import blog4 from "../assets/blog-page/blog-4.jpg";
+import blog4 from "../assets/blog-page/blog-4.png";
+import blog5 from "../assets/blog-page/blog-5.png";
+import blog6 from "../assets/blog-page/blog-6.png";
+import blog7 from "../assets/blog-page/blog-7.png";
+import blog8 from "../assets/blog-page/blog-8.png";
+import blog9 from "../assets/blog-page/blog-9.png";
 
 export const BlogsData = [
   {
@@ -64,7 +69,7 @@ export const LatestBlogsData = [
     },
     keys: ["Developer", "Coding"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog5,
     readTime: 15,
   },
   {
@@ -76,7 +81,7 @@ export const LatestBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog6,
     readTime: 20,
   },
   {
@@ -88,7 +93,7 @@ export const LatestBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog7,
     readTime: 20,
   },
   {
@@ -100,7 +105,7 @@ export const LatestBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog8,
     readTime: 20,
   },
   {
@@ -112,7 +117,7 @@ export const LatestBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog9,
     readTime: 20,
   },
 ];
@@ -138,7 +143,7 @@ export const PopularBlogsData = [
     },
     keys: ["Developer", "Coding"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog5,
     readTime: 15,
   },
   {
@@ -150,7 +155,7 @@ export const PopularBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog6,
     readTime: 20,
   },
   {
@@ -162,7 +167,7 @@ export const PopularBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog7,
     readTime: 20,
   },
   {
@@ -174,7 +179,7 @@ export const PopularBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog8,
     readTime: 20,
   },
   {
@@ -186,7 +191,7 @@ export const PopularBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog9,
     readTime: 20,
   },
 ];
@@ -212,7 +217,7 @@ export const LikedBlogsData = [
     },
     keys: ["Developer", "Coding"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog5,
     readTime: 15,
   },
   {
@@ -224,7 +229,7 @@ export const LikedBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog6,
     readTime: 20,
   },
   {
@@ -236,7 +241,7 @@ export const LikedBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog7,
     readTime: 20,
   },
   {
@@ -248,7 +253,7 @@ export const LikedBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog8,
     readTime: 20,
   },
   {
@@ -260,7 +265,7 @@ export const LikedBlogsData = [
     },
     keys: ["Marketing", "Client"],
     title: "UX Lessons That We Can Learn from “Threads”",
-    image: blog4,
+    image: blog9,
     readTime: 20,
   },
 ];
