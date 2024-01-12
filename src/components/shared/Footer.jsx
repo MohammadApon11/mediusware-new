@@ -21,7 +21,7 @@ import Link from "next/link";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="bg-white relative footerBg">
+    <div className="relative footerBg">
       <Image
         className="absolute bottom-0 left-0"
         src={footerVector1}
