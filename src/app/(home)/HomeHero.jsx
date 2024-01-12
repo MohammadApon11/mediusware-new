@@ -1,8 +1,7 @@
 import React from "react";
-import video from "../../assets/video/video.mp4";
+// import video from "../../assets/video/video.mp4";
 import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
 import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
-import ContentGap from "@/components/shared/gap's/ContentGap";
 
 const HomeHero = () => {
   return (
@@ -22,7 +21,7 @@ const HomeHero = () => {
           </div>
         </div>
         <video
-          src={video}
+          src={require("../../assets/video/video.mp4")}
           autoPlay
           muted
           loop
