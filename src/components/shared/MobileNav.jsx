@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const MobileNav = () => {
   const [navToggle, setNavToggle] = useState(false);
   const navRef = useRef(null);
-  const activeRoute = usePathname();
+  const activeRoute = usePathname;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -43,27 +43,18 @@ const MobileNav = () => {
         } md:top-[80px] xxs:max-md:top-[110px] md:w-[350px] sm:w-[300px] mobile:w-[300px] xxs:max-mobile:w-[80vw] sm:top-[120px] bg-white px-[18px] h-[100vh] xxs:max-mobile:h-[100vh] transition-all duration-100`}
       >
         <ul className="flex flex-col">
-          {NavData.map((path, index) => (
+          {NavData.map((item, index) => (
             <Link
-              href={
-                path === "HOME"
-                  ? "/"
-                  : path === "WHY MEDIUSWARE"
-                  ? "why-mediusware"
-                  : path === "OUR TEAM"
-                  ? "our-team"
-                  : path.toLowerCase()
-              }
+              href={item.path}
               className={`md:py-[15px] sm:py-[12px] mobile:py-[12px] xxs:py-[14px] text-[#002B4F] font-semibold ${
-                path === "SERVICES" && "flex items-center justify-between group"
-              } ${
-                activeRoute === `/${path.toLowerCase()}` && "text-secondary"
-              }`}
+                item.path === "services" &&
+                "flex items-center justify-between group"
+              } ${activeRoute === `${item.path}` && "text-secondary"}`}
               key={index}
             >
-              {path}
+              {item.title}
               <span className="group-hover:rotate-180 transition-all duration-200 lg:text-[14px]">
-                {path === "SERVICES" && <FaAngleDown />}
+                {item.path === "services" && <FaAngleDown />}
               </span>
             </Link>
           ))}

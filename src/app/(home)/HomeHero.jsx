@@ -1,5 +1,5 @@
 import React from "react";
-// import video from "../../assets/video/video.mp4";
+import video from "../../assets/video/video.mp4";
 import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
 import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
 
@@ -21,7 +21,7 @@ const HomeHero = () => {
           </div>
         </div>
         <video
-          src={require("../../assets/video/video.mp4")}
+          src={video}
           autoPlay
           muted
           loop

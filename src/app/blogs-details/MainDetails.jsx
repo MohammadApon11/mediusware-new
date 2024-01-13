@@ -181,7 +181,7 @@ const MainDetails = () => {
             </h4>
             <form className="flex flex-col gap-[24px] bg-white p-[32px] rounded-[16px] text-center">
               <div>
-                <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#0072BC]  to-[#009FA9] text-[30px] font-bold">
+                <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#0072BC] to-[#009FA9] text-[30px] font-bold">
                   Have something to say?
                 </h3>
                 <p className="text-[#667085] text-[16px]">

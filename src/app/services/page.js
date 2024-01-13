@@ -1,13 +1,24 @@
-import NavBar from "@/components/shared/NavBar";
+import CommonHero from "@/components/shared/CommonHero";
+import Footer from "@/components/shared/Footer";
+import Services from "@/components/shared/Services";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
+import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import React from "react";
 
 const ServicesPage = () => {
   return (
-    <div>
+    <>
       <PaddingTop />
-      <p className="text-5xl mt-20 text-white flex items-center justify-center">ServicesPag</p>
-    </div>
+      <CommonHero
+        text1={"Services"}
+        title1={"WE PROVIDE THIS"}
+        title2={"IT SOLUTIONS"}
+      />
+      <SectionsGap />
+      <Services />
+      <SectionsGap />
+      <Footer />
+    </>
   );
 };
 

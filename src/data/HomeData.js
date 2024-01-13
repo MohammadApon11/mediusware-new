@@ -7,6 +7,7 @@ import service5 from "../assets/all/9.png";
 import service6 from "../assets/all/10.png";
 import service7 from "../assets/all/12.png";
 import service8 from "../assets/all/11.png";
+import service9 from "../assets/all/64.png";
 
 export const ServicesData = [
   {
@@ -14,7 +15,7 @@ export const ServicesData = [
     image: service1,
     title: "Website Development",
     description:
-      "We offer One-Of-A-Kind web development solutions to businesses all around the world. Our team is dedicated to letting yo...",
+      "We offer One-Of-A-Kind web development solutions to businesses all around the world. Our team is dedicated to...",
   },
   {
     id: 2,
@@ -65,6 +66,13 @@ export const ServicesData = [
     title: "SQA Solution",
     description:
       "We perform end-to-end testing to offer you a flawless software experience. Our highly competent SQA engineers are...",
+  },
+  {
+    id: 9,
+    image: service9,
+    title: "Digital Marketing",
+    description:
+      "From building a brand identity to designing a complete digital marketing solution, Mediusware knows how to take...",
   },
 ];
 

@@ -20,3 +20,8 @@
 .text-third {
   @apply text-[#667085]
 }
+
+/* slick slider */
+.slick-slider .slick-slide {
+  padding: 0 15px;
+}

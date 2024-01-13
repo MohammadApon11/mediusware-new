@@ -12,7 +12,7 @@ const BlogPage = () => {
   return (
     <>
       <PaddingTop />
-      <CommonHero />
+      <CommonHero text1={"Blog"} title1={"READ INSIGHTFUL"} title2={"ARTICLES"}/>
       <SectionsGap />
       <AllBlogs />
       <SectionsGap />

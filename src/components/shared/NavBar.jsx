@@ -51,8 +51,8 @@ const NavBar = () => {
             {/* larger device nav start from here */}
             <div className="flex items-center bigMon:gap-[51px] 2xl:gap-[35px] xl:gap-[25px] lg:gap-[20px] xxs:max-lg:hidden">
               <ul className="flex items-center text-primary font-semibold">
-                {NavData.map((path, index) => (
-                  <NavLink key={index} path={path} index={index} />
+                {NavData.map((item, index) => (
+                  <NavLink key={index} item={item} index={index} />
                 ))}
               </ul>
               <CommonBtn title={"Book A Call"} />
