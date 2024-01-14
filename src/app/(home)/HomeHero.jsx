@@ -16,8 +16,8 @@ const HomeHero = () => {
             <h1 className="text-[30px]">We shape the art of technology</h1>
           </div>
           <div className="flex items-center gap-5 mt-[24px]">
-            <PrimaryBtn bg={true}>Know More</PrimaryBtn>{" "}
-            <PrimaryBtn>Contact Us</PrimaryBtn>
+            <PrimaryBtn bg={true} path={"example"}>Know More</PrimaryBtn>{" "}
+            <PrimaryBtn path={"example"}>Contact Us</PrimaryBtn>
           </div>
         </div>
         <video

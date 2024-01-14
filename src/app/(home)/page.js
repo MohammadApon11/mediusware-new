@@ -23,7 +23,7 @@ const HomePage = () => {
       <ContentGap />
       <div className="text-center">
         <Services last={"Digital Marketing"} />
-        <PrimaryBtn bg={true}>See More</PrimaryBtn>
+        <PrimaryBtn bg={true} path={"example"}>See More</PrimaryBtn>
       </div>
       <SectionsGap />
       <OurClients />

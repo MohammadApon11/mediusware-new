@@ -105,7 +105,7 @@ export const PageServicesData = [
   {
     id: "mobile development",
     heroImage: mobileHero,
-    title: "MOBILE DEVELOPMENT",
+    title: "MOBILE APP DEVELOPMENT",
     description1:
       "Designing and building mobile applications for iOS and Android platforms, utilizing",
     description2:
@@ -128,7 +128,7 @@ export const PageServicesData = [
   {
     id: "e-commerce development",
     heroImage: eCommerceHero,
-    title: "E-COMMERCE DEVELOPMENT",
+    title: "E-COMMERCE SOLUTION",
     description1:
       "Developing robust ecommerce platforms, integrating secure payment gateways, and  optimizing",
     description2:
