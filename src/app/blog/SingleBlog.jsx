@@ -66,7 +66,7 @@ const SingleBlog = ({ blog }) => {
               id === 1 ? "lg:-mt-8" : "lg:-mt-12"
             }`}
           >
-            {keys.map((key, index) => (
+            {keys?.map((key, index) => (
               <button
                 key={index}
                 className={`bg-[#C2EAE4] hover:bg-[#accec9] text-[#002B4F] sm:px-[12px] xxs:px-[8px] sm:py-[4px] xxs:max-sm:text-[9px] sm:rounded-[8px] xxs:rounded-[5px] ${

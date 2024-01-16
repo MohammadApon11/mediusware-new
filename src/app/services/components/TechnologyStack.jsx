@@ -19,7 +19,7 @@ const TechnologyStack = ({ data }) => {
           </p>
         </div>
         <div className="grid grid-cols-7 gap-x-[20px] gap-y-[30px]">
-          {images.map((image, index) => (
+          {images?.map((image, index) => (
             <div
               key={index}
               className="flex items-center justify-center px-[20px] py-[12px] rounded-[8px] border border-[#0060AF]"

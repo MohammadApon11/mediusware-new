@@ -21,7 +21,7 @@ const TableContents = () => {
         <h4 className="text-[#002B4F] text-[24px]">Table of contents</h4>
       </div>
       <ol className="flex flex-col gap-[16px] mt-[24px] h-[392px] overflow-y-auto custom-scrollbar">
-        {tableInfoData.map((data, index) => (
+        {tableInfoData?.map((data, index) => (
           <li
             key={index}
             className="text-[#475467] text-[20px] hover:text-[#0060AF] hover:underline"

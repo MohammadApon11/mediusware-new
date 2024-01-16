@@ -12,7 +12,7 @@ const IndustryWeServe = () => {
         <SectionsHeader title1={"Industry"} title2={"Serve"} />
         <ContentGap />
         <div className="grid grid-cols-6 gap-y-[24px] gap-x-[16px]">
-          {IndustryData.map((data, index) => (
+          {IndustryData?.map((data, index) => (
             <div className="border border-[#D0D5DD] rounded-[8px] p-[30px] group  text-center" key={index}>
               <Image
                 className="group-hover:scale-125 transition-all duration-200 mx-auto"

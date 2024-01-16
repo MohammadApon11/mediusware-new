@@ -49,7 +49,7 @@ const IndustrySlider = () => {
         <SideTitle title1={"We are Trusted by"} title2={"Indstry Leaders"} />
         <div className="mt-[50px]">
           <Slider {...settings}>
-            {IndustryData.map((industry, index) => (
+            {IndustryData?.map((industry, index) => (
               <div key={index}>
                 <Image
                   className="w-[100px]"

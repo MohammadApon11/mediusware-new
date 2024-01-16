@@ -17,7 +17,7 @@ const Services = ({last}) => {
         </span>
         <ContentGap />
         <div className="grid grid-cols-4 gap-[20px]">
-          {ServicesData.map((data, index) => (
+          {ServicesData?.map((data, index) => (
             <div
               className={`border border-[#D0D5DD] p-[18px] flex items-center gap-[18px] bg-white rounded-lg ${data.title === last && "hidden"}`}
               key={index}

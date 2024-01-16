@@ -14,7 +14,7 @@ const MostPopularBlogs = () => {
       <SectionsHeader title1={"Most"} title2={"Popular"} />
       <ContentGap />
       <div className="grid grid-cols-3 gap-x-8 gap-y-12">
-        {popularBlogs.map((blog, index) => {
+        {popularBlogs?.map((blog, index) => {
           return <SimilarBlogs blog={blog} key={index} />;
         })}
       </div>

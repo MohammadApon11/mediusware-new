@@ -65,7 +65,7 @@ const MainDetails = () => {
           is not another framework.{" "}
         </p>
         <ol className="ml-[24px] mt-[20px]">
-          {featureData.map((feature, index) => (
+          {featureData?.map((feature, index) => (
             <li key={index} className="my-[16px]">
               <span className="font-semibold">
                 {index + 1}. {feature.split(".")[0]}.
@@ -164,7 +164,7 @@ const MainDetails = () => {
                 <span className="text-[14px] text-[#344054]">Copy link</span>
               </div>
               <div className="flex items-center gap-[12px]">
-                {icons.map((icon, index) => (
+                {icons?.map((icon, index) => (
                   <div
                     key={index}
                     className="flex items-center gap-[4px] bg-white rounded-[8px] p-[10px]"

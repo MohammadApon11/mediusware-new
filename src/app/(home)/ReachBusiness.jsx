@@ -11,7 +11,7 @@ const ReachBusiness = () => {
         <SectionsHeader title1={"Reach"} title2={"Business"} />
         <ContentGap />
         <div className="grid grid-cols-4 gap-[30px]">
-          {ReachBusinessData.map((data, index) => (
+          {ReachBusinessData?.map((data, index) => (
             <div
               className="hover:shadow-xl p-[24px] group transition-shadow duration-300 flex flex-col justify-center items-center text-center"
               key={index}

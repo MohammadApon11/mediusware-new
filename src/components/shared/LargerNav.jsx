@@ -34,7 +34,7 @@ const NavLink = ({ item, index }) => {
          ease-in-out origin-top "
         >
           <div className="flex flex-col border-[1px] border-[#00A88E]  bg-white rounded-[5px] py-3 pl-[20px]">
-            {SubNavData.map((item, index) => (
+            {SubNavData?.map((item, index) => (
               <Link
                 className={`hover:text-[#00A88E] px-[8px] py-[12px] text-primary ${activeRoute === `/services${item.path}` && "text-secondary"}`}
                 href={`/services${item.path}`}

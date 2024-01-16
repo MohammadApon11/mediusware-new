@@ -15,7 +15,7 @@ const OurClients = () => {
         </span>
         <ContentGap />
         <div className="grid grid-cols-5 gap-[24px]">
-          {ClientsData.map((image, index) => (
+          {ClientsData?.map((image, index) => (
             <Image src={image} key={index} width={190} height={80} />
           ))}
         </div>

@@ -35,7 +35,7 @@ const SimilarBlogs = ({ blog }) => {
           </div>
         </div>
         <div className="flex gap-2 absolute bottom-[115px] right-6">
-          {keys.map((key, index) => (
+          {keys?.map((key, index) => (
             <button
               key={index}
               className="px-[12px] py-[4px] text-[12px] font-semibold rounded-[8px] bg-[#C2EAE4]"

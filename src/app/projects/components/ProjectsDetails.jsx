@@ -48,7 +48,7 @@ const ProjectsDetails = ({ data }) => {
           <div>
             <h1 className="text-[40px] font-semibold">CHALLENGES WE FACED</h1>
             <ul className="mt-[30px] flex flex-col gap-[12px]">
-              {challenges.map((img, index) => (
+              {challenges?.map((img, index) => (
                 <li className="flex items-center gap-[12px]" key={index}>
                   <GoDotFill className="text-secondary" /> {img}
                 </li>
@@ -58,7 +58,7 @@ const ProjectsDetails = ({ data }) => {
           <div>
             <h1 className="text-[40px] font-semibold">HOW WE OVERCOME THIS CHALLENGES</h1>
             <ul className="mt-[30px] flex flex-col gap-[12px]">
-              {overcomes.map((img, index) => (
+              {overcomes?.map((img, index) => (
                 <li className="flex items-center gap-[12px]" key={index}>
                   <GoDotFill className="text-secondary" /> {img}
                 </li>
@@ -68,7 +68,7 @@ const ProjectsDetails = ({ data }) => {
           <div>
             <h1 className="text-[40px] font-semibold">SOFTWARE ARCHITECTURE WE FOLLOWED</h1>
             <ul className="mt-[30px] flex flex-col gap-[12px]">
-              {softArchitect.map((img, index) => (
+              {softArchitect?.map((img, index) => (
                 <li className="flex items-center gap-[12px]" key={index}>
                   <GoDotFill className="text-secondary" /> {img}
                 </li>
@@ -94,32 +94,32 @@ const ProjectsDetails = ({ data }) => {
             </div>
             <div className="flex flex-col gap-[19px]">
               <div className="flex items-center gap-[15px]">
-                {backend.map((tech, index) => (
+                {backend?.map((tech, index) => (
                   <Image src={tech} width={30} height={20} key={index} />
                 ))}
               </div>
               <div className="flex items-center gap-[15px]">
-                {frontend.map((tech, index) => (
+                {frontend?.map((tech, index) => (
                   <Image src={tech} width={30} height={20} key={index} />
                 ))}
               </div>
               <div className="flex items-center gap-[15px]">
-                {frameworks.map((tech, index) => (
+                {frameworks?.map((tech, index) => (
                   <Image src={tech} width={30} height={20} key={index} />
                 ))}
               </div>
               <div className="flex items-center gap-[15px]">
-                {serverSide.map((tech, index) => (
+                {serverSide?.map((tech, index) => (
                   <Image src={tech} width={30} height={20} key={index} />
                 ))}
               </div>
               <div className="flex items-center gap-[15px]">
-                {api.map((tech, index) => (
+                {api?.map((tech, index) => (
                   <Image src={tech} width={30} height={20} key={index} />
                 ))}
               </div>
               <div className="flex items-center gap-[15px]">
-                {management.map((tech, index) => (
+                {management?.map((tech, index) => (
                   <Image src={tech} width={30} height={20} key={index} />
                 ))}
               </div>

@@ -50,7 +50,7 @@ const ServicesSlider = () => {
     <ServicesSectionWrapper>
       <SideTitle title1={"Discover the more"} title2={"services"} />
       <Slider {...settings} className="mt-[50px]">
-        {ServicesData.map((data, index) => (
+        {ServicesData?.map((data, index) => (
           <div
             className={`border border-[#D0D5DD] p-[18px] flex items-center gap-[18px] bg-white rounded-lg`}
             key={index}

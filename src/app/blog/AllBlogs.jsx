@@ -34,7 +34,7 @@ const AllBlogs = () => {
       <ContentGap />
       {blogs.length > 0 ? (
         <div className="lg:grid grid-rows-2 grid-flow-col xl:gap-8 lg:gap-6 xxs:flex flex-col mobile:gap-5 xxs:gap-4 sm:max-lg:mt-[25px]">
-          {blogs.map((blog, index) => {
+          {blogs?.map((blog, index) => {
             return <SingleBlog blog={blog} key={index} />;
           })}
         </div>

@@ -43,7 +43,7 @@ const MobileNav = () => {
         } md:top-[80px] xxs:max-md:top-[110px] md:w-[350px] sm:w-[300px] mobile:w-[300px] xxs:max-mobile:w-[80vw] sm:top-[120px] bg-white px-[18px] h-[100vh] xxs:max-mobile:h-[100vh] transition-all duration-100`}
       >
         <ul className="flex flex-col">
-          {NavData.map((item, index) => (
+          {NavData?.map((item, index) => (
             <Link
               href={item.path}
               className={`md:py-[15px] sm:py-[12px] mobile:py-[12px] xxs:py-[14px] text-[#002B4F] font-semibold ${

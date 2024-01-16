@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       <SectionsGap />
       <SectionsWrapper>
         <div className="grid grid-cols-3 gap-[24px]">
-          {ProjectsData.map((project, index) => (
+          {ProjectsData?.map((project, index) => (
             <AllProjects project={project} key={index} />
           ))}
         </div>

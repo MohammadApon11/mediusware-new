@@ -11,7 +11,7 @@ const LikedBlogs = () => {
       <SectionsHeader title1={"You May Also"} title2={"Like"} />
       <ContentGap />
       <div className="grid grid-cols-3 gap-x-8 gap-y-12">
-        {LikedBlogsData.map((blog, index) => {
+        {LikedBlogsData?.map((blog, index) => {
           return <SimilarBlogs blog={blog} key={index} />;
         })}
       </div>

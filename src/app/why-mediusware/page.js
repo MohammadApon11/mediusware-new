@@ -1,14 +1,29 @@
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import React from "react";
+import ServicesHero from "../services/components/ServicesHero";
+import hero1 from "../../assets/about/hero.jpg";
+import SectionsGap from "@/components/shared/gap's/SectionsGap";
+import Footer from "@/components/shared/Footer";
+import AllAbout from "./AllAbout";
 
 const WhyMediuswarePage = () => {
+  const data = {
+    title: "Mediusware Company Information",
+    heroImage: hero1,
+    description1:
+      "With a global network of customers, partners, employees, and thought leaders,",
+    description2:
+      "Mediusware helps the world run better and improves people’s lives.",
+  };
   return (
-    <div>
+    <>
       <PaddingTop />
-      <p className="text-5xl mt-20 text-white flex items-center justify-center">
-        WhyMediuswarePage
-      </p>
-    </div>
+      <ServicesHero data={data} />
+      <SectionsGap />
+      <AllAbout />
+      <SectionsGap />
+      <Footer />
+    </>
   );
 };
 

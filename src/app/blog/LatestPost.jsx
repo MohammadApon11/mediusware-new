@@ -13,7 +13,7 @@ const LatestBlogs = () => {
       <SectionsHeader title1={"Latest"} title2={"Post"} />
       <ContentGap />
       <div className="grid grid-cols-3 gap-x-8 gap-y-12">
-        {latestBlogs.map((blog, index) => {
+        {latestBlogs?.map((blog, index) => {
           return <SimilarBlogs blog={blog} key={index} />;
         })}
       </div>

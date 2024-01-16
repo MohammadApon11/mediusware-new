@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import "../../../styles/common.css";
 import PrimaryBtn from "../../../components/shared/button's/PrimaryBtn";
