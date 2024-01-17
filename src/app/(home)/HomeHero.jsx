@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../../assets/video/video.mp4";
+import video from "../../../public/video.mp4";
 import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
 import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
 
@@ -16,8 +16,8 @@ const HomeHero = () => {
             <h1 className="text-[30px]">We shape the art of technology</h1>
           </div>
           <div className="flex items-center gap-5 mt-[24px]">
-            <PrimaryBtn bg={true} path={"example"}>Know More</PrimaryBtn>{" "}
-            <PrimaryBtn path={"example"}>Contact Us</PrimaryBtn>
+            <PrimaryBtn bg={true} path={"why-mediusware"}>Know More</PrimaryBtn>{" "}
+            <PrimaryBtn path={"contact-us"}>Contact Us</PrimaryBtn>
           </div>
         </div>
         <video

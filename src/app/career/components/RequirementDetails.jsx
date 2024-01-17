@@ -5,7 +5,7 @@ import RequirementTitle from "./RequirementTitle";
 import { SiPolkadot } from "react-icons/si";
 import Link from "next/link";
 import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
-import { NameContext } from "@/providers/context";
+import { InfoContext } from "@/providers/context";
 
 const RequirementDetails = ({ data }) => {
   const {
@@ -26,7 +26,7 @@ const RequirementDetails = ({ data }) => {
     jobType,
   } = data;
 
-  const { name, setName } = useContext(NameContext);
+  const { name, setName } = useContext(InfoContext);
   console.log("from name", name);
   return (
     <ServicesSectionWrapper>

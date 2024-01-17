@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { IoCloudUpload } from "react-icons/io5";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import { NameContext } from "@/providers/context";
+import { InfoContext } from "@/providers/context";
 import { useForm } from "react-hook-form";
 
 const ApplyForm = () => {
@@ -13,7 +13,7 @@ const ApplyForm = () => {
     setSelectedOption(event.target.value);
   };
 
-  const { name } = useContext(NameContext);
+  const { name } = useContext(InfoContext);
 
   const {
     register,
