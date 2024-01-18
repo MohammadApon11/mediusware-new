@@ -7,7 +7,7 @@ import React from "react";
 const ReachBusiness = () => {
   return (
     <div className="bg-white py-[30px]">
-      <div className="w-[1300px] mx-auto">
+      <div className="w-[1400px] mx-auto">
         <SectionsHeader title1={"Reach"} title2={"Business"} />
         <ContentGap />
         <div className="grid grid-cols-4 gap-[30px]">

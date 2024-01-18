@@ -1,15 +1,15 @@
+import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
 import SectionsHeader from "@/components/shared/SectionsHeader";
 import ContentGap from "@/components/shared/gap's/ContentGap";
-import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
 import { ServicesData } from "@/data/HomeData";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 
-const Services = ({last}) => {
+const Services = ({ last }) => {
   return (
-    <SectionsWrapper>
+    <ServicesSectionWrapper>
       <div className="text-center">
         <SectionsHeader title1={"Our"} title2={"Services"} />
         <span className="text-[18px] text-center text-primary">
@@ -18,27 +18,25 @@ const Services = ({last}) => {
         <ContentGap />
         <div className="grid grid-cols-4 gap-[20px]">
           {ServicesData?.map((data, index) => (
-            <div
-              className={`border border-[#D0D5DD] p-[18px] flex items-center gap-[18px] bg-white rounded-lg ${data.title === last && "hidden"}`}
+            <Link
+              href={`services/${data.path}`}
+              className={`border border-[#D0D5DD] p-[18px] flex items-center flex-col gap-[18px] bg-white rounded-lg hover:shadow-xl transition-all duration-700 hover:scale-[1.02] group ${
+                data.title === last && "hidden"
+              }`}
               key={index}
             >
               <Image src={data.image} width={150} height={150} />
-              <div className="text-start">
-                <p className="text-[18px] font-semibold">{data.title}</p>
-                <p className="text-[15px] mt-[18px]">{data.description}</p>
-                <Link
-                  href={"/about"}
-                  className="text-primary text-[24px] p-[20px]"
-                >
-                  <GoArrowRight />
-                </Link>
-              </div>
-            </div>
+              <p className="text-[18px] font-semibold">{data.title}</p>
+              <p className="text-[15px] mt-[18px]">{data.description}</p>
+              <span className="text-primary text-[24px] px-[10px] -rotate-45 group-hover:rotate-0 transition-all duration-300">
+                <GoArrowRight />
+              </span>
+            </Link>
           ))}
         </div>
         <ContentGap />
       </div>
-    </SectionsWrapper>
+    </ServicesSectionWrapper>
   );
 };
 

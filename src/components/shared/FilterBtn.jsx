@@ -11,9 +11,9 @@ const FilterBtn = () => {
         <button
           key={index}
           onClick={() => setActiveBtn(item?.name)}
-          className={`relative hover:text-[#00A88E] hover:border-b-[2px] border-[#00A88E] ${
+          className={`relative hover:text-[#00A88E] hover:after:content-[''] hover:after:bg-[#00A88E] hover:after:h-[2px] after:w-[0%] hover:after:left-0 hover:after:-bottom-[5px] hover:after:rounded-xl hover:after:absolute hover:after:w-[100%] hover:after:duration-300 ${
             activeBtn === item?.name &&
-            "text-[#00A88E] hover:border-b border-[#00A88E]"
+            "text-[#00A88E]"
           } ${activeBtn !== item?.name && "text-[#475467]"}`}
         >
           <span className="font-semibold">{item?.name}</span>{" "}

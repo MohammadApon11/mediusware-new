@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const UseTech = () => {
   return (
-    <div className="w-[1300px] mx-auto">
+    <div className="w-[1400px] mx-auto">
       <SectionsHeader title1={"We"} title2={"Use"} />
       <ContentGap />
       <div className="grid grid-cols-4 gap-[24px]">

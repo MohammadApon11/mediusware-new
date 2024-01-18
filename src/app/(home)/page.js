@@ -23,7 +23,11 @@ const HomePage = () => {
       <ContentGap />
       <div className="text-center">
         <Services last={"Digital Marketing"} />
-        <PrimaryBtn bg={true} path={"example"}>See More</PrimaryBtn>
+        <div className="flex items-center justify-center">
+          <PrimaryBtn bgGray={true} path="services">
+            See More
+          </PrimaryBtn>
+        </div>
       </div>
       <SectionsGap />
       <OurClients />

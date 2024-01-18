@@ -1,16 +1,49 @@
 import Link from "next/link";
 import React from "react";
+import "../../../styles/btnStyles.css";
 
-const PrimaryBtn = ({ bg, path, children }) => {
+const PrimaryBtn = ({
+  bgGray = false,
+  bg = false,
+  path = "",
+  width = false,
+  scroll = null,
+  children,
+}) => {
+  const handleClick = () => {
+    // Scroll down 200 pixels
+    window.scrollBy(0, scroll);
+  };
   return (
-    <Link
-      href={path}
-      className={`border border-[#0060AF] px-[24px] py-[12px] text-[16px] rounded-[8px] text-[#0060AF] hover:bg-[#0060AF] hover:text-white transition-all duration-200 text-center ${
-        bg && "bg-[#0060AF] text-white "
-      }`}
-    >
-      {children}
-    </Link>
+    <div>
+      {scroll === null ? (
+        <Link
+          href={path}
+          className={`${
+            bg
+              ? "tj-transparent-btn2 btn2"
+              : bgGray
+              ? "tj-transparent-btn3 btn3"
+              : "tj-transparent-btn btn"
+          } ${width && "w-[200px]"}`}
+        >
+          {children}
+        </Link>
+      ) : (
+        <button
+          onClick={handleClick}
+          className={`${
+            bg
+              ? "tj-transparent-btn2 btn2"
+              : bgGray
+              ? "tj-transparent-btn3 btn3"
+              : "tj-transparent-btn btn"
+          } ${width && "w-[200px]"}`}
+        >
+          {children}
+        </button>
+      )}
+    </div>
   );
 };
 

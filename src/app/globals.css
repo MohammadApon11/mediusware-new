@@ -9,16 +9,16 @@
   @apply bg-[#0060AF];
 }
 .text-primary {
-  @apply text-[#002B4F]
+  @apply text-[#002B4F];
 }
 .text-secondary {
-  @apply text-[#00A88E]
+  @apply text-[#00A88E];
 }
-.border-bg{
-  @apply border-[#00A88E]
+.border-bg {
+  @apply border-[#00A88E];
 }
 .text-third {
-  @apply text-[#667085]
+  @apply text-[#667085];
 }
 
 /* slick slider */

@@ -1,8 +1,6 @@
 import React from "react";
 import "../../../styles/common.css";
-import PrimaryBtn from "../../../components/shared/button's/PrimaryBtn";
 import heroImage from "../../../assets/commonHero/marketing.png";
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
 import { FaBoxArchive } from "react-icons/fa6";
 import { MdOutlineWatchLater } from "react-icons/md";
 

@@ -18,7 +18,7 @@ const ContactBox = () => {
           </span>
         </div>
         <Link
-        href={"contact"}
+        href={"/contact-us"}
           className={`border border-white px-[24px] py-[12px] text-[16px] rounded-[8px] text-white hover:text-white transition-all duration-200 text-center `}
         >
          Contact Us

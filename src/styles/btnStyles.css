@@ -1,0 +1,150 @@
+.tj-transparent-btn {
+  position: relative;
+  display: block;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  border-radius: 0;
+  border: 2px solid #0060af;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 13px 22px 13px 30px;
+}
+.tj-transparent-btn:hover {
+  color: white;
+  border: 2px solid #0060af;
+}
+.btn:hover {
+  color: white;
+  background-color: transparent;
+  border-color: #0060af;
+}
+.tj-transparent-btn::before {
+  background: #0060af;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  border-radius: 0;
+}
+.tj-transparent-btn.btn::before {
+  width: 100%;
+  height: 0%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 0;
+}
+.tj-transparent-btn.btn:hover::before {
+  height: 380%;
+}
+
+/* btn 2 */
+.tj-transparent-btn2 {
+  position: relative;
+  display: block;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  border-radius: 0;
+  border: 2px solid #0060af;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 13px 22px 13px 30px;
+  background: #0060af;
+}
+.tj-transparent-btn2:hover {
+  color: white;
+  border: 2px solid #0060af;
+}
+.btn2:hover {
+  color: #002b4f;
+  background-color: transparent;
+  border-color: white;
+}
+.tj-transparent-btn2::before {
+  background: white;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  border-radius: 0;
+}
+.tj-transparent-btn2.btn2::before {
+  width: 100%;
+  height: 0%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 0;
+}
+.tj-transparent-btn2.btn2:hover::before {
+  height: 380%;
+}
+
+/* btn 3 */
+.tj-transparent-btn3 {
+  position: relative;
+  display: block;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  border-radius: 0;
+  border: 2px solid #0060af;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 13px 22px 13px 30px;
+  background: #0060af;
+}
+.tj-transparent-btn3:hover {
+  color: white;
+  border: 2px solid #0060af;
+}
+.btn3:hover {
+  color: #002b4f;
+  background-color: transparent;
+  border-color: #002b4f;
+}
+.tj-transparent-btn3::before {
+  background: white;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  border-radius: 0;
+}
+.tj-transparent-btn3.btn3::before {
+  width: 100%;
+  height: 0%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 0;
+}
+.tj-transparent-btn3.btn3:hover::before {
+  height: 380%;
+}

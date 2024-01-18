@@ -4,7 +4,7 @@ import img from "../../assets/all/52.png"
 
 const Newtwork = () => {
   return (
-    <div className="w-[1300px] mx-auto">
+    <div className="w-[1400px] mx-auto">
       <div className="flex items-center justify-between">
         <div className="text-[#002B4F]">
           <h1 className="text-[40px]">Join Our Partner Network</h1>

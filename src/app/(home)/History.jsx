@@ -13,7 +13,7 @@ const History = () => {
   return (
     <div className="bg-white py-[40px] ">
       <ContentGap />
-      <div className="w-[1300px] mx-auto flex items-center justify-between">
+      <div className="w-[1400px] mx-auto flex items-center justify-between">
         <div className="flex flex-col items-center gap-[12px]">
           <Image className="mx-auto" src={ex} width={70} height={70} />
           <p className="text-[#0060AF] text-[50px]">

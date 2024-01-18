@@ -1,12 +1,14 @@
+"use client"
 import React from "react";
 import "../../../styles/common.css";
 import PrimaryBtn from "../../../components/shared/button's/PrimaryBtn";
 
 const ServicesHero = ({ data }) => {
   const { title, heroImage, description1, description2 } = data;
+  
   return (
     <div
-      className="relative h-[600px] bg-cover bg-center w-[100%] bg-fixed flex items-center flex-col justify-center"
+      className="relative h-[400px] bg-cover bg-center w-[100%] bg-fixed flex items-center flex-col justify-center"
       style={{
         backgroundImage: `url(${heroImage.src})`,
       }}
@@ -18,7 +20,11 @@ const ServicesHero = ({ data }) => {
         <p className="text-[20px] text-center mt-[24px] mb-[24px]">
           {description1} <br /> {description2}
         </p>
-        <PrimaryBtn bg={true} path={"example"}>Read More</PrimaryBtn>
+        <div className="flex justify-center">
+          <PrimaryBtn width={true} bg={true} path={"example"} scroll={500}>
+            Read More
+          </PrimaryBtn>
+        </div>
       </div>
     </div>
   );

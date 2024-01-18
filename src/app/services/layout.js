@@ -5,7 +5,7 @@ import React from "react";
 
 const ServicesLayout = ({ children }) => {
   return (
-    <div>
+    <div className="scroll-smooth">
       {children}
       <ContentGap />
       <SectionsGap />

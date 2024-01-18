@@ -9,7 +9,7 @@ const Features = ({ data }) => {
     features
   } = data;
   return (
-    <div className="w-[1300px] mx-auto">
+    <div className="w-[1400px] mx-auto">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-[40px] text-primary font-semibold">

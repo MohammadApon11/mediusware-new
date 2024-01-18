@@ -15,7 +15,7 @@ const IndustrySlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -46,7 +46,7 @@ const IndustrySlider = () => {
   return (
     <div className="bg-white py-[40px]">
       <ServicesSectionWrapper>
-        <SideTitle title1={"We are Trusted by"} title2={"Indstry Leaders"} />
+        <SideTitle title1={"We are Trusted by"} title2={"Industry Leaders"} />
         <div className="mt-[50px]">
           <Slider {...settings}>
             {IndustryData?.map((industry, index) => (

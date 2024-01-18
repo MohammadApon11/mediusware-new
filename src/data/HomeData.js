@@ -13,6 +13,7 @@ export const ServicesData = [
   {
     id: 1,
     image: service1,
+    path:"web-development",
     title: "Website Development",
     description:
       "We offer One-Of-A-Kind web development solutions to businesses all around the world. Our team is dedicated to...",
@@ -20,6 +21,7 @@ export const ServicesData = [
   {
     id: 2,
     image: service2,
+    path:"mobile-development",
     title: "Mobile App Development",
     description:
       "We provide you with smart and practical Android & iOS apps to ensure the best outcome for your business. Our full-cycle...",
@@ -27,6 +29,7 @@ export const ServicesData = [
   {
     id: 3,
     image: service3,
+    path:"e-commerce",
     title: "E-commerce Solution",
     description:
       "E-commerce websites need to be user-friendly, but attractive at the same time. Enriched with cutting-edge technology...",
@@ -34,6 +37,7 @@ export const ServicesData = [
   {
     id: 4,
     image: service4,
+    path:"enterprise-solution",
     title: "Enterprise Solution",
     description:
       "An effective ERP software can integrate all your business operations into a single platform. To make your business...",
@@ -41,13 +45,15 @@ export const ServicesData = [
   {
     id: 5,
     image: service5,
+    path:"ui-ux",
     title: "UI/UX Design & Dev",
     description:
       "Good UI/UX design is not just about an aesthetically appealing interface, it’s also about crafting simple, intuitive custome...",
   },
   {
-    id: 8,
+    id: 6,
     image: service6,
+    path:"api-integration",
     title: "API Integration",
     description:
       "API integration helps to get all your apps and systems work together. With an aim to fulfill your business requirements...",
@@ -56,6 +62,7 @@ export const ServicesData = [
   {
     id: 7,
     image: service7,
+    path:"software-development",
     title: "Software Development",
     description:
       "With state-of-the-art technology, we build useful software for any business. Bring your business objectives to life with our...",
@@ -63,6 +70,7 @@ export const ServicesData = [
   {
     id: 8,
     image: service8,
+    path:"sqa-solution",
     title: "SQA Solution",
     description:
       "We perform end-to-end testing to offer you a flawless software experience. Our highly competent SQA engineers are...",
@@ -70,6 +78,7 @@ export const ServicesData = [
   {
     id: 9,
     image: service9,
+    path:"digital-marketing",
     title: "Digital Marketing",
     description:
       "From building a brand identity to designing a complete digital marketing solution, Mediusware knows how to take...",

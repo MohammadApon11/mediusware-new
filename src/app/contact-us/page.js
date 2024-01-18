@@ -9,7 +9,7 @@ import LocationBox from "./LocationBox";
 
 const ContactPage = () => {
   const data = {
-    title: "Contact",
+    title: "CONTACT",
     heroImage: contactHero,
     description1:
       "Give us a call or drop by anytime, we endeavor to answer all",

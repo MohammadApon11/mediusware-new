@@ -13,7 +13,7 @@ const IndustryWeServe = () => {
         <ContentGap />
         <div className="grid grid-cols-6 gap-y-[24px] gap-x-[16px]">
           {IndustryData?.map((data, index) => (
-            <div className="border border-[#D0D5DD] rounded-[8px] p-[30px] group  text-center" key={index}>
+            <div className="border border-[#D0D5DD] rounded-[8px] p-[30px] group  text-center hover:shadow-2xl transition-all duration-300" key={index}>
               <Image
                 className="group-hover:scale-125 transition-all duration-200 mx-auto"
                 src={data.image}

@@ -7,7 +7,7 @@ const TechnologyStack = ({ data }) => {
   return (
     <div className=" bg-white pb-[40px]">
       <ContentGap />
-      <div className="w-[1300px] mx-auto flex items-center gap-[40px]">
+      <div className="w-[1400px] mx-auto flex items-center gap-[40px]">
         <div className="text-primary ">
           <h1 className="text-[40px] font-semibold">
             Technology <span className="text-secondary">Stack</span>
@@ -22,7 +22,7 @@ const TechnologyStack = ({ data }) => {
           {images?.map((image, index) => (
             <div
               key={index}
-              className="flex items-center justify-center px-[20px] py-[12px] rounded-[8px] border border-[#0060AF]"
+              className="flex items-center justify-center px-[20px] py-[12px] rounded-[8px] border border-[#0060AF] hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
             >
               <Image src={image} width={130} height={60} />
             </div>

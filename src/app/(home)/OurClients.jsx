@@ -8,7 +8,7 @@ import React from "react";
 const OurClients = () => {
   return (
     <div className="bg-white py-[40px]">
-      <div className="text-center w-[1300px] mx-auto">
+      <div className="text-center w-[1400px] mx-auto">
         <SectionsHeader title1={"Our"} title2={"Clients"} />
         <span className="text-[18px] text-primary">
           We are trusted by industry leaders
