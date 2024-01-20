@@ -7,6 +7,11 @@ import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import WeOffer from "../components/WeOffer";
 import { JobRequirementsData } from "@/data/CareerData";
 
+export const metadata = {
+  title: "Mediusware || Career || UI/UX Developer",
+  description: "Medius Family",
+};
+
 const UiUxDesginerTraineePage = () => {
   const data = JobRequirementsData.find((job) => job.id === "ui/ux-desginer trainee")
   return (

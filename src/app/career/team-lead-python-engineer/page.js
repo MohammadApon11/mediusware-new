@@ -7,6 +7,11 @@ import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import WeOffer from "../components/WeOffer";
 import { JobRequirementsData } from "@/data/CareerData";
 
+export const metadata = {
+  title: "Mediusware || Career || Team Lead Python Engineer",
+  description: "Medius Family",
+};
+
 const TeamLeadPythonEngineer = () => {
   const data = JobRequirementsData.find(
     (job) => job.id === "team lead python engineer"

@@ -1,8 +1,11 @@
-import Footer from "@/components/shared/Footer";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
-import { TitleProvider } from "@/providers/context";
 import React from "react";
+
+export const metadata = {
+  title: "Mediusware || Career",
+  description: "Medius Family",
+};
 
 const CareerLayout = ({ children }) => {
   return (
@@ -10,7 +13,6 @@ const CareerLayout = ({ children }) => {
       {children}
       <ContentGap />
       <SectionsGap />
-      <Footer />
     </>
   );
 };

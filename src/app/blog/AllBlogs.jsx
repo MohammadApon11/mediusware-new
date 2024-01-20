@@ -12,14 +12,21 @@ import NotFound from "@/components/shared/NotFound";
 
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState(BlogsData);
+  const [filteredBlogs, setFilteredBlogs] = useState([]);
 
+  const handleFilteredName = (name) => {
+    const filteringBolgs = blogs.filter(
+      (blog) => blog.category?.toLowerCase() === name.toLowerCase()
+    );
+    setFilteredBlogs(filteringBolgs);
+  };
   return (
     <SectionsWrapper>
       {/* Filter blog section start from here */}
       <SectionsHeader title1={"All"} title2={"Blogs"} />
       <ContentGap />
       <div className="flex xxs:max-lg:flex-col-reverse sm:max-lg:gap-5 xxs:max-md:gap-5 items-center justify-between 2xl:w-[1400px] xl:w-[1150px] lg:w-[940px] mx-auto">
-        <FilterBtn />
+        <FilterBtn handleFilteredName={handleFilteredName} />
         <div className="border-b border-[#D0D5DD] 2xl:pb-[13px] xl:pb-[10px] lg:pb-[9px] xxs:max-lg:pb-[9px] xxs:max-lg:w-[100%]">
           <div className="flex items-center justify-between text-[#475467] font-semibold">
             <input
@@ -34,9 +41,13 @@ const AllBlogs = () => {
       <ContentGap />
       {blogs.length > 0 ? (
         <div className="lg:grid grid-rows-2 grid-flow-col xl:gap-8 lg:gap-6 xxs:flex flex-col mobile:gap-5 xxs:gap-4 sm:max-lg:mt-[25px]">
-          {blogs?.map((blog, index) => {
-            return <SingleBlog blog={blog} key={index} />;
-          })}
+          {filteredBlogs.length > 0
+            ? filteredBlogs?.map((blog, index) => {
+                return <SingleBlog blog={blog} key={index} />;
+              })
+            : blogs.map((blog, index) => {
+                return index < 3 && <SingleBlog blog={blog} key={index} />;
+              })}
         </div>
       ) : (
         <NotFound />

@@ -7,9 +7,14 @@ import Footer from "@/components/shared/Footer";
 import ContactForm from "./ContactForm";
 import LocationBox from "./LocationBox";
 
+export const metadata = {
+  title: "Mediusware || Contact Us",
+  description: "Medius Family",
+};
+
 const ContactPage = () => {
   const data = {
-    title: "CONTACT",
+    title: "CONTACT WITH US",
     heroImage: contactHero,
     description1:
       "Give us a call or drop by anytime, we endeavor to answer all",
@@ -24,7 +29,6 @@ const ContactPage = () => {
       <SectionsGap />
       <LocationBox />
       <SectionsGap />
-      <Footer />
     </>
   );
 };

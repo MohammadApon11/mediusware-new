@@ -40,7 +40,6 @@ const HomePage = () => {
       <SectionsGap />
       <Newtwork />
       <SectionsGap />
-      <Footer />
     </>
   );
 };

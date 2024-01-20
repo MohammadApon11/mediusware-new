@@ -16,8 +16,6 @@ const ServicesPage = () => {
       />
       <SectionsGap />
       <Services />
-      <SectionsGap />
-      <Footer />
     </>
   );
 };

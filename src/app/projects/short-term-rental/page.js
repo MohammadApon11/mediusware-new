@@ -6,6 +6,11 @@ import ProjectsDetails from "../components/ProjectsDetails";
 import ContactBox from "../components/ContactBox";
 import { ProjectsData } from "@/data/ProjectsData";
 
+export const metadata = {
+  title: "Mediusware || Projects || Short Term Rental",
+  description: "Medius Family",
+};
+
 const ShortTermRental = () => {
     const data = ProjectsData.find((project) => project.id === "short term rental");
   return (

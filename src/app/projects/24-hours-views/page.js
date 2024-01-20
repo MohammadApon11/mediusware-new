@@ -6,6 +6,11 @@ import React from "react";
 import ProjectsDetails from "../components/ProjectsDetails";
 import ContactBox from "../components/ContactBox";
 
+export const metadata = {
+  title: "Mediusware || Projects || 24 hours",
+  description: "Medius Family",
+};
+
 const HoursViewPage = () => {
   const data = ProjectsData.find((project) => project.id === "24 hours views");
   return (

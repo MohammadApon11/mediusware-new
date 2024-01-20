@@ -6,13 +6,21 @@ import AllBlogs from "./AllBlogs";
 import LatestBlogs from "./LatestPost";
 import MostPopularBlogs from "./MostPopularBlogs";
 import Message from "@/components/shared/Message";
-import Footer from "@/components/shared/Footer";
+
+export const metadata = {
+  title: "Mediusware || Blogs",
+  description: "Medius Family",
+};
 
 const BlogPage = () => {
   return (
     <>
       <PaddingTop />
-      <CommonHero text1={"Blog"} title1={"READ INSIGHTFUL"} title2={"ARTICLES"}/>
+      <CommonHero
+        text1={"Blog"}
+        title1={"READ INSIGHTFUL"}
+        title2={"ARTICLES"}
+      />
       <SectionsGap />
       <AllBlogs />
       <SectionsGap />
@@ -20,11 +28,8 @@ const BlogPage = () => {
       <SectionsGap />
       <MostPopularBlogs />
       <SectionsGap />
-      <div className="bg-white">
-        <Message />
-        <SectionsGap />
-        <Footer />
-      </div>
+      <Message />
+      <SectionsGap />
     </>
   );
 };

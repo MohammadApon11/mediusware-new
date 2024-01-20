@@ -11,7 +11,7 @@ const SingleBlog = ({ blog }) => {
     <Link
       href={"blogs-details"}
       className={` ${
-        id === 1 ? "grid-cols-6 row-span-2" : "grid-cols-2 row-span-1"
+        id % 2 === 0 ? "grid-cols-6 row-span-2" : "grid-cols-2 row-span-1"
       } relative rounded-[16px] group overflow-hidden`}
     >
       <div className="hidden group-hover:block">

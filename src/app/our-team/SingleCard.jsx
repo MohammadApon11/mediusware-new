@@ -25,7 +25,7 @@ const SingleCard = ({member}) => {
           height={300}
         />
       </Link>
-      <div className="mt-[60px] text-primary">
+      <div className="mt-[60px] text-primary text-center">
         <Link
           onClick={() => setMember(member)}
           href={`our-team/${member?.name}`}
@@ -33,7 +33,7 @@ const SingleCard = ({member}) => {
         >
           {member?.name}
         </Link>
-        <span className="text-[14px]">{member?.designation}</span>
+        <p className="text-[14px]">{member?.designation}</p>
         {member?.name === "Md Shahinur Rahman" && (
           <Link href={"https://www.linkedin.com/in/shahinur-mw/"}>
             <FaLinkedin className="hover:text-[#00A88E] hover:scale-125 transition-all duration-300 mx-auto mt-[20px]" />

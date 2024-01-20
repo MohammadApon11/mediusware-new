@@ -28,7 +28,9 @@ const NavBar = () => {
             <Link href={"https://www.facebook.com/mediusware"}>
               <FaFacebook />
             </Link>
-            <AiFillTwitterCircle />
+            <Link href={"https://twitter.com/mediusware"}>
+              <AiFillTwitterCircle />
+            </Link>
             <Link href={"https://www.linkedin.com/company/mediusware-ltd/"}>
               <FaLinkedin />
             </Link>

@@ -6,6 +6,11 @@ import ProjectsDetails from "../components/ProjectsDetails";
 import ContactBox from "../components/ContactBox";
 import { ProjectsData } from "@/data/ProjectsData";
 
+export const metadata = {
+  title: "Mediusware || Projects || Info Stream Web",
+  description: "Medius Family",
+};
+
 const InfoStreamWebPage = () => {
   const data = ProjectsData.find((project) => project.id === "info stream web");
   return (

@@ -1,10 +1,14 @@
-import Footer from "@/components/shared/Footer";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import img from "../../assets/all/login.svg";
+
+export const metadata = {
+  title: "Mediusware || Forgot Password",
+  description: "Medius Family",
+};
 
 const ForgotPassword = () => {
   return (
@@ -38,7 +42,6 @@ const ForgotPassword = () => {
         </form>
       </div>
       <SectionsGap />
-      <Footer />
     </>
   );
 };

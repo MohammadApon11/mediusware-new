@@ -7,6 +7,11 @@ import RequirementDetails from "../components/RequirementDetails";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import WeOffer from "../components/WeOffer";
 
+export const metadata = {
+  title: "Mediusware || Career || Business Analyst",
+  description: "Medius Family",
+};
+
 const BusinessAnalystPage = () => {
   const data = JobRequirementsData.find((job) => job.id === "business analyst");
   return (

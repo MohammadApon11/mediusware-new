@@ -1,10 +1,14 @@
-import Footer from "@/components/shared/Footer";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import React from "react";
 import img from "../../assets/all/login.svg";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Mediusware || Login",
+  description: "Medius Family",
+};
 
 const LoginPage = () => {
   return (
@@ -44,7 +48,6 @@ const LoginPage = () => {
         </form>
       </div>
       <SectionsGap />
-      <Footer />
     </>
   );
 };

@@ -6,6 +6,11 @@ import ProjectsDetails from "../components/ProjectsDetails";
 import { ProjectsData } from "@/data/ProjectsData";
 import ContactBox from "../components/ContactBox";
 
+export const metadata = {
+  title: "Mediusware || Projects || Galileo",
+  description: "Medius Family",
+};
+
 const GalileoPage = () => {
     const data = ProjectsData.find((project) => project.id === "galileo");
   return (

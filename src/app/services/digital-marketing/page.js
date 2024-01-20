@@ -8,6 +8,11 @@ import TechnologyStack from "../components/TechnologyStack";
 import IndustrySlider from "../components/IndustrySlider";
 import ServicesSlider from "../components/ServicesSlider";
 
+export const metadata = {
+  title: "Mediusware || Services || Digital Marketing",
+  description: "Medius Family",
+};
+
 const MarketingPage = () => {
   const data = PageServicesData.find((data) => data.id === "digital marketing");
   return (

@@ -28,7 +28,6 @@ const ProjectsPage = () => {
           ))}
         </div>
       </SectionsWrapper>
-      <SectionsGap />
     </>
   );
 };

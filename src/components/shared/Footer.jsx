@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import footerbg from "../../assets/blog-page/footer-bg.png";
 import footerVector1 from "../../assets/blog-page/footer-vector-1.png";
@@ -17,11 +18,20 @@ import { MdWatchLater } from "react-icons/md";
 import Image from "next/image";
 import "../../styles/footer.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const pathName = usePathname();
+
   return (
-    <div className="relative footerBg">
+    <div
+      className="relative bg-no-repeat bg-cover bg-center footerBg"
+      style={{
+        backgroundImage: `url(${footerbg.src})`,
+      }}
+    >
       <Image
         className="absolute bottom-0 left-0"
         src={footerVector1}
@@ -55,35 +65,98 @@ const Footer = () => {
             <Image src={footerLogo} width={173} height={100} />
             <p className="mt-[24px]">We shape the art of technology</p>
             <div className="flex items-center gap-[12px] mt-[24px]">
-              <Link href={"https://www.facebook.com/mediusware"}>
+              <Link className="z-10" href={"https://www.facebook.com/mediusware"}>
                 <Image src={facebook} width={32} height={32} />
               </Link>
-              <Link href={"https://www.linkedin.com/company/mediusware-ltd/"}>
+              <Link className="z-10" href={"https://www.linkedin.com/company/mediusware-ltd/"}>
                 <Image src={linkedin} width={32} height={32} />
               </Link>
-              <Link href={"https://twitter.com/mediusware"}>
+              <Link className="z-10" href={"https://twitter.com/mediusware"}>
                 <Image src={twitter} width={32} height={32} />
               </Link>
-              <Link href={"https://www.youtube.com/@mediuswareltd.4437"}>
+              <Link className="z-10" href={"https://www.youtube.com/@mediuswareltd.4437"}>
                 <Image src={youtube} width={32} height={32} />
               </Link>
             </div>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 z-10">
             <h4 className="font-semibold">Company</h4>
-            <p className="hover:underline">Services</p>
-            <p className="hover:underline">About Us</p>
-            <p className="hover:underline">FAQs</p>
-            <p className="hover:underline">Contact</p>
+            <Link
+              href={
+                pathName.startsWith("/services") ? "/services" : "/services"
+              }
+              className="hover:underline"
+            >
+              Services
+            </Link>
+            <Link href={"why-mediusware"} className="hover:underline">
+              About Us
+            </Link>
+            <Link href={"why-mediusware"} className="hover:underline">
+              FAQs
+            </Link>
+            <Link href="contact-us" className="hover:underline">
+              Contact
+            </Link>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 z-10">
             <h4 className="font-semibold">Services</h4>
-            <p className="hover:underline">Software Development</p>
-            <p className="hover:underline">UI/UX Design & Dev</p>
-            <p className="hover:underline">Web Development</p>
-            <p className="hover:underline">API Integration</p>
-            <p className="hover:underline">Mobile App Design</p>
-            <p className="hover:underline">E commerce Solutions</p>
+            <Link
+              href={
+                pathName.startsWith("/services")
+                  ? "software-development"
+                  : "services/software-development"
+              }
+              className="hover:underline"
+            >
+              Software Development
+            </Link>
+            <Link
+              href={
+                pathName.startsWith("/services") ? "ui-ux" : "services/ui-ux"
+              }
+              className="hover:underline"
+            >
+              UI/UX Design & Dev
+            </Link>
+            <Link
+              href={
+                pathName.startsWith("/services")
+                  ? "web-development"
+                  : "services/web-development"
+              }
+              className="hover:underline"
+            >
+              Web Development
+            </Link>
+            <Link
+              href={
+                pathName.startsWith("/services")
+                  ? "api-integration"
+                  : "services/api-integration"
+              }
+              className="hover:underline"
+            >
+              API Integration
+            </Link>
+            <Link
+              href={
+                pathName.startsWith("/services")
+                  ? "mobile-development"
+                  : "services/mobile-development"
+              }
+              className="hover:underline"
+            >
+              Mobile App Design
+            </Link>
+            <Link
+              href={
+                pathName.startsWith("/services") ? "e-commerce" : "services/e-commerce"
+              }
+              className="hover:underline"
+            >
+              E commerce Solutions
+            </Link>
           </div>
           <div className="flex flex-col gap-3">
             <h4 className="font-semibold">Bangladesh Address</h4>

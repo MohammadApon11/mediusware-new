@@ -6,6 +6,11 @@ import ProjectsDetails from "../components/ProjectsDetails";
 import ContactBox from "../components/ContactBox";
 import { ProjectsData } from "@/data/ProjectsData";
 
+export const metadata = {
+  title: "Mediusware || Projects || Woo Study",
+  description: "Medius Family",
+};
+
 const WooStudyPage = () => {
     const data = ProjectsData.find((project) => project.id === "woo study");
   return (

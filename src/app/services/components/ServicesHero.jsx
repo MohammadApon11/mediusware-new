@@ -1,11 +1,14 @@
-"use client"
+"use client";
 import React from "react";
 import "../../../styles/common.css";
 import PrimaryBtn from "../../../components/shared/button's/PrimaryBtn";
+import { usePathname } from "next/navigation";
 
 const ServicesHero = ({ data }) => {
   const { title, heroImage, description1, description2 } = data;
-  
+
+  const pathName = usePathname();
+
   return (
     <div
       className="relative h-[400px] bg-cover bg-center w-[100%] bg-fixed flex items-center flex-col justify-center"
@@ -22,7 +25,7 @@ const ServicesHero = ({ data }) => {
         </p>
         <div className="flex justify-center">
           <PrimaryBtn width={true} bg={true} path={"example"} scroll={500}>
-            Read More
+            {pathName === "/contact-us" ? "Send Message" : "See More"}
           </PrimaryBtn>
         </div>
       </div>

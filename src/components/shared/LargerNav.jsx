@@ -7,7 +7,7 @@ import { SubNavData } from "@/data/NavData";
 
 const NavLink = ({ item, index }) => {
   const activeRoute = usePathname();
-  console.log(activeRoute);
+  // console.log(activeRoute);
   return (
     <div
       key={index}

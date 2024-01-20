@@ -1,4 +1,3 @@
-import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -18,7 +17,7 @@ const AllProjects = ({ project }) => {
       <div className="mt-[20px] mb-[20px] p-[16px] text-primary flex flex-col gap-[16px]">
         <h4 className="text-[26px] font-semibold">{title}</h4>
         <p className="text-[16px]">{shortOverview}</p>
-        <Link className="w-full flex items-center justify-center text-white py-[12px] hover:bg-[#176baf] bg-[#0060AF] transition-all duration-300 font-semibold rounded-md" href={`/projects/${path}`}>See More</Link>
+        <Link className="w-full flex items-center justify-center text-white py-[12px] hover:bg-[#176baf] bg-[#0060AF] transition-all duration-300 font-semibold rounded-md" href={`/projects/${path}`}>See Details</Link>
       </div>
     </div>
   );

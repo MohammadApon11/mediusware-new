@@ -6,6 +6,11 @@ import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import ContactBox from "../components/ContactBox";
 import { ProjectsData } from "@/data/ProjectsData";
 
+export const metadata = {
+  title: "Mediusware || Projects || Product Advisor",
+  description: "Medius Family",
+};
+
 const ProductAdvisorPage = () => {
   const data = ProjectsData.find((project) => project.id === "product advisor");
   return (

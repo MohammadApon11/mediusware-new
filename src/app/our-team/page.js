@@ -4,7 +4,11 @@ import ServicesHero from "../services/components/ServicesHero";
 import heroImg from "../../assets/team/teamHero2.jpg";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import OurTeamCards from "./OurTeamCards";
-import Footer from "@/components/shared/Footer";
+
+export const metadata = {
+  title: "Mediusware || Our Team",
+  description: "Medius Family",
+};
 
 const OurTeamPage = () => {
   const data = {
@@ -16,13 +20,12 @@ const OurTeamPage = () => {
       "and talented software engineers, Developer, Designer, Marketer, SQA, HR and so on.",
   };
   return (
-    <div className="bg-white">
+    <div className="bg-white pb-[5px]">
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
       <OurTeamCards />
       <SectionsGap />
-      <Footer />
     </div>
   );
 };

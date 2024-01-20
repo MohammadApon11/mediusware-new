@@ -31,7 +31,6 @@ const TeamMember = () => {
         </div>
       </div>
       <SectionsGap />
-      <Footer />
     </div>
   );
 };

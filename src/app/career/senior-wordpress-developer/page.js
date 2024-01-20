@@ -7,6 +7,11 @@ import SectionsGap from '@/components/shared/gap\'s/SectionsGap';
 import WeOffer from '../components/WeOffer';
 import { JobRequirementsData } from '@/data/CareerData';
 
+export const metadata = {
+    title: "Mediusware || Career || Sr Wordpress Developer",
+    description: "Medius Family",
+  };
+
 const SrWordPressPage = () => {
     const data = JobRequirementsData.find((job) => job.id === "senior wordpress weveloper")
     return (

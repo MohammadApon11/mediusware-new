@@ -3,8 +3,12 @@ import React from "react";
 import ServicesHero from "../services/components/ServicesHero";
 import hero1 from "../../assets/about/hero.jpg";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
-import Footer from "@/components/shared/Footer";
 import AllAbout from "./AllAbout";
+
+export const metadata = {
+  title: "Mediusware || About",
+  description: "Medius Family",
+};
 
 const WhyMediuswarePage = () => {
   const data = {
@@ -22,7 +26,6 @@ const WhyMediuswarePage = () => {
       <SectionsGap />
       <AllAbout />
       <SectionsGap />
-      <Footer />
     </>
   );
 };

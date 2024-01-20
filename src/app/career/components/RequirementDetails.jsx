@@ -27,7 +27,7 @@ const RequirementDetails = ({ data }) => {
   } = data;
 
   const { name, setName } = useContext(InfoContext);
-  console.log("from name", name);
+  // console.log("from name", name);
   return (
     <ServicesSectionWrapper>
       <div className="grid grid-cols-3 gap-x-[30px]">

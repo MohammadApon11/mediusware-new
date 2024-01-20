@@ -9,6 +9,8 @@ import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import Image from "next/image";
 import ServicesSectionWrapper from "./gap's/ServicesSectionWrapper";
+import cardShape1 from "../../../assets/all/cardShape1.png";
+import cardShape2 from "../../../assets/all/cardShape2.png";
 
 const ServicesSlider = () => {
   var settings = {
@@ -51,27 +53,37 @@ const ServicesSlider = () => {
       <SideTitle title1={"Discover the more"} title2={"services"} />
       <Slider {...settings} className="mt-[50px]">
         {ServicesData?.map((data, index) => (
-          <div
-            className={`border border-[#D0D5DD] p-[18px] flex items-center gap-[18px] bg-white rounded-lg`}
+          <Link
+            href={data.path}
+            className={`border border-[#D0D5DD] p-[18px] flex items-center gap-[18px] bg-white rounded-lg relative group overflow-hidden`}
             key={index}
           >
+            <Image
+              className="absolute -right-[10%] -top-[10%] opacity-0 group-hover:right-0 group-hover:top-0 group-hover:opacity-[100%] transition-all duration-300"
+              src={cardShape1}
+              width={80}
+              height={100}
+            />
+            <Image
+              className="absolute -left-[10%] -bottom-[10%] opacity-0 group-hover:left-0 group-hover:bottom-0 group-hover:opacity-[100%] transition-all duration-300"
+              src={cardShape2}
+              width={80}
+              height={100}
+            />
             <Image
               className="mx-auto"
               src={data.image}
               width={120}
               height={120}
             />
-            <div className="text-center mt-[16px]">
+            <div className="text-center mt-[20px]">
               <h1 className="text-[18px] font-semibold">{data.title}</h1>
-              <p className="text-[15px] mt-[18px]">{data.description}</p>
-              <Link
-                href={"/about"}
-                className="text-primary text-[24px] flex justify-center mt-[10px]"
-              >
-                <GoArrowRight />
-              </Link>
+              <p className="text-[14px] mt-[20px]">{data.description}</p>
+              <span className="text-primary text-[24px] mt-[20px] flex justify-center">
+                <GoArrowRight className="-rotate-45 group-hover:rotate-0 transition-all duration-300" />
+              </span>
             </div>
-          </div>
+          </Link>
         ))}
       </Slider>
     </ServicesSectionWrapper>
