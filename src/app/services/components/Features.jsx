@@ -1,17 +1,15 @@
-import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
+"use client"
 import React from "react";
 import LottieAnimation from "./LottieAnimation";
 import { FaRegCheckCircle } from "react-icons/fa";
 
 const Features = ({ data }) => {
-  const {
-    anime,
-    features
-  } = data;
+  const { anime, features } = data;
   return (
     <div className="w-[1400px] mx-auto">
       <div className="flex items-center justify-between">
-        <div>
+        <div
+        >
           <h1 className="text-[40px] text-primary font-semibold">
             Key <span className="text-secondary">Features</span>
           </h1>

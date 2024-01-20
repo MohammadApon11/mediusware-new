@@ -1,5 +1,5 @@
 "use client";
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import React, { useContext } from "react";
 import RequirementTitle from "./RequirementTitle";
 import { SiPolkadot } from "react-icons/si";
@@ -29,7 +29,7 @@ const RequirementDetails = ({ data }) => {
   const { name, setName } = useContext(InfoContext);
   // console.log("from name", name);
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <div className="grid grid-cols-3 gap-x-[30px]">
         <div className="col-span-2">
           <iframe
@@ -172,7 +172,7 @@ const RequirementDetails = ({ data }) => {
           ></iframe>
         </div>
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

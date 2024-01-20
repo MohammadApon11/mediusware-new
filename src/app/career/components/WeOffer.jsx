@@ -7,7 +7,7 @@ import image5 from "../../../assets/career/5.png";
 import image6 from "../../../assets/career/6.png";
 import image7 from "../../../assets/career/7.png";
 import image8 from "../../../assets/career/8.png";
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import Image from "next/image";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import SectionsHeader from "@/components/shared/SectionsHeader";
@@ -25,7 +25,7 @@ const WeOFferData = [
 
 const WeOffer = () => {
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <SectionsHeader title1={"We"} title2={"Offer"} />
       <ContentGap />
       <div className="grid grid-cols-4 gap-[24px]">
@@ -36,7 +36,7 @@ const WeOffer = () => {
           </div>
         ))}
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

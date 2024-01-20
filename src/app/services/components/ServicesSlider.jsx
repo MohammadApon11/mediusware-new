@@ -8,7 +8,7 @@ import SideTitle from "./shared/SideTitle";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import Image from "next/image";
-import ServicesSectionWrapper from "./gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import cardShape1 from "../../../assets/all/cardShape1.png";
 import cardShape2 from "../../../assets/all/cardShape2.png";
 
@@ -49,7 +49,7 @@ const ServicesSlider = () => {
     ],
   };
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <SideTitle title1={"Discover the more"} title2={"services"} />
       <Slider {...settings} className="mt-[50px]">
         {ServicesData?.map((data, index) => (
@@ -86,7 +86,7 @@ const ServicesSlider = () => {
           </Link>
         ))}
       </Slider>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

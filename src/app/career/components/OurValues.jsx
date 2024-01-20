@@ -1,4 +1,4 @@
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import SectionsHeader from "@/components/shared/SectionsHeader";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import React from "react";
@@ -64,7 +64,7 @@ const valuesData = [
 
 const OurValues = () => {
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <SectionsHeader title1={"Our"} title2={"Values"} />
       <p className="text-primary">
         Our core values are the guiding principles that underpin our work and
@@ -78,7 +78,7 @@ const OurValues = () => {
           <ValuesCards key={index} values={values} />
         ))}
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

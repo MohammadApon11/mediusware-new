@@ -1,8 +1,7 @@
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import Image from "next/image";
 import React from "react";
-import { GoDot } from "react-icons/go";
 import { GoDotFill } from "react-icons/go";
 
 const ProjectsDetails = ({ data }) => {
@@ -26,7 +25,7 @@ const ProjectsDetails = ({ data }) => {
     management,
   } = data;
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <SectionsGap />
       <Image
         className="rounded-[16px] w-[1200px] h-[750px] mx-auto"
@@ -127,7 +126,7 @@ const ProjectsDetails = ({ data }) => {
           </div>
         </div>
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

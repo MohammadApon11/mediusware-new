@@ -16,7 +16,7 @@ export const metadata = {
 const APIPage = () => {
   const data = PageServicesData.find((data) => data.id === "api integration");
   return (
-    <div>
+    <>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -26,7 +26,7 @@ const APIPage = () => {
       <IndustrySlider />
       <SectionsGap />
       <ServicesSlider />
-    </div>
+    </>
   );
 };
 

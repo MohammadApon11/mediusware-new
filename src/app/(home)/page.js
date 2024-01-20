@@ -10,17 +10,16 @@ import UseTech from "./UseTech";
 import IndustryWeServe from "./IndustryWeServe";
 import ReachBusiness from "./ReachBusiness";
 import Newtwork from "./Newtwork";
-import Footer from "@/components/shared/Footer";
 import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
+import ScrollWrapper from "@/components/shared/wrapper's/motion/ScrollWrapper";
 
 const HomePage = () => {
   return (
     <>
+      <ScrollWrapper />
       <PaddingTop />
       <HomeHero />
       <History />
-      <SectionsGap />
-      <ContentGap />
       <div className="text-center">
         <Services last={"Digital Marketing"} />
         <div className="flex items-center justify-center">
@@ -29,13 +28,12 @@ const HomePage = () => {
           </PrimaryBtn>
         </div>
       </div>
-      <SectionsGap />
+      <ContentGap />
       <OurClients />
       <SectionsGap />
       <UseTech />
       <SectionsGap />
       <IndustryWeServe />
-      <SectionsGap />
       <ReachBusiness />
       <SectionsGap />
       <Newtwork />

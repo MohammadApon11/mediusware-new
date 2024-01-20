@@ -6,10 +6,11 @@ import tech2 from "../../assets/all/tech2.png";
 import tech3 from "../../assets/all/tech3.png";
 import tech4 from "../../assets/all/tech4.png";
 import Image from "next/image";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 
 const UseTech = () => {
   return (
-    <div className="w-[1400px] mx-auto">
+    <SectionWrapper>
       <SectionsHeader title1={"We"} title2={"Use"} />
       <ContentGap />
       <div className="grid grid-cols-4 gap-[24px]">
@@ -18,7 +19,7 @@ const UseTech = () => {
         <Image src={tech3} width={290} height={255} />
         <Image src={tech4} width={290} height={255} />
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SideTitle from "./shared/SideTitle";
-import ServicesSectionWrapper from "./gap's/ServicesSectionWrapper";
 import { IndustryData } from "@/data/IndustryData";
 import Image from "next/image";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 
 const IndustrySlider = () => {
   var settings = {
@@ -45,7 +45,7 @@ const IndustrySlider = () => {
   };
   return (
     <div className="bg-white py-[40px]">
-      <ServicesSectionWrapper>
+      <SectionWrapper>
         <SideTitle title1={"We are Trusted by"} title2={"Industry Leaders"} />
         <div className="mt-[50px]">
           <Slider {...settings}>
@@ -61,7 +61,7 @@ const IndustrySlider = () => {
             ))}
           </Slider>
         </div>
-      </ServicesSectionWrapper>
+      </SectionWrapper>
     </div>
   );
 };

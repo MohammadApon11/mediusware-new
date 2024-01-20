@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../assets/all/52.png"
+import img from "../../assets/all/52.png";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 
 const Newtwork = () => {
   return (
-    <div className="w-[1400px] mx-auto">
+    <SectionWrapper>
       <div className="flex items-center justify-between">
         <div className="text-[#002B4F]">
           <h1 className="text-[40px]">Join Our Partner Network</h1>
@@ -15,9 +16,9 @@ const Newtwork = () => {
             <br /> for you!
           </p>
         </div>
-        <Image src={img} width={545} height={254}/>
+        <Image src={img} width={545} height={254} />
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

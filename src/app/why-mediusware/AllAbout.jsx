@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ServicesSectionWrapper from "../services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import img1 from "../../assets/about/group1.jpg";
 import img2 from "../../assets/about/group2.jpg";
 import chart from "../../assets/about/chart.jpg";
@@ -74,7 +74,7 @@ const AllAbout = () => {
     ],
   };
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <div className="flex flex-col gap-[70px]">
         <Temp
           title1={"Who"}
@@ -125,7 +125,7 @@ const AllAbout = () => {
           img={trans}
         />
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

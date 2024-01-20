@@ -1,14 +1,14 @@
 import SectionsHeader from "@/components/shared/SectionsHeader";
 import ContentGap from "@/components/shared/gap's/ContentGap";
-import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
+import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
 import { ApplicationProcessData } from "@/data/CareerData";
 import React from "react";
 import ProcessCards from "./ProcessCards";
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 
 const ApplicationProcess = () => {
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <SectionsHeader title1={"Application"} title2={"Process"} />
       <p className="text-center text-primary">
         Our application process is designed to find talent for our dynamic IT
@@ -23,7 +23,7 @@ const ApplicationProcess = () => {
           ))}
         </div>
       </>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

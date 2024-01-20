@@ -1,4 +1,4 @@
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import { JobRequirementsData } from "@/data/CareerData";
 import React from "react";
 import { GiQueenCrown } from "react-icons/gi";
@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const JobCards = () => {
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <div className="grid grid-cols-3 gap-[24px]">
         {JobRequirementsData?.map((job, index) => (
           <div
@@ -39,7 +39,7 @@ const JobCards = () => {
           </div>
         ))}
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 

@@ -1,5 +1,4 @@
 import CommonHero from "@/components/shared/CommonHero";
-import Footer from "@/components/shared/Footer";
 import Services from "@/components/shared/Services";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";

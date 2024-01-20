@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import FilterBtn from "@/components/shared/FilterBtn";
 import SectionsHeader from "@/components/shared/SectionsHeader";
-import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
+import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
 import { BlogsData } from "@/data/BlogData";
 import SingleBlog from "./SingleBlog";
 import { CiSearch } from "react-icons/ci";
@@ -21,7 +21,7 @@ const AllBlogs = () => {
     setFilteredBlogs(filteringBolgs);
   };
   return (
-    <SectionsWrapper>
+    <BigWidthSectionWrapper>
       {/* Filter blog section start from here */}
       <SectionsHeader title1={"All"} title2={"Blogs"} />
       <ContentGap />
@@ -55,7 +55,7 @@ const AllBlogs = () => {
       <ContentGap />
       <LoadMoreBtn />
       {/* Filter blog section end here */}
-    </SectionsWrapper>
+    </BigWidthSectionWrapper>
   );
 };
 

@@ -1,6 +1,6 @@
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
-import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
+import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
 import React from "react";
 import DetailsBlogsHero from "./DetailsBlogsHero";
 import TableContents from "./TableContents";
@@ -19,7 +19,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <SectionsWrapper>
+      <BigWidthSectionWrapper>
         <PaddingTop />
         <SectionsGap />
         <DetailsBlogsHero />
@@ -40,7 +40,7 @@ const page = () => {
         <SectionsGap />
         <LikedBlogs />
         <SectionsGap />
-      </SectionsWrapper>
+      </BigWidthSectionWrapper>
       <Message />
       <SectionsGap />
     </>

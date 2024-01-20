@@ -1,6 +1,6 @@
 import React from "react";
 import heroAnimation from "../../../assets/animation/enterprise.json";
-import ServicesSectionWrapper from "@/app/services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import { FaToolbox } from "react-icons/fa";
 import ArrowBtn from "./ArrowBtn";
 import LottieAnimation from "@/app/services/components/LottieAnimation";
@@ -13,7 +13,7 @@ const CareerHero = () => {
     <div className="relative py-[70px] bg-slate-200">
       <Image className="absolute bottom-0 left-0 opacity-10" src={position1} width={1200} height={500} />
       <Image className="absolute top-0 right-0" src={position2} width={600} height={600}/>
-      <ServicesSectionWrapper>
+      <SectionWrapper>
         <div className="flex items-center justify-between">
           <div className="text-primary z-10">
             <button className="text-[#0060AF] flex items-center gap-1 bg-white px-[15px] py-[6px] font-semibold rounded-[20px] text-[14px]">
@@ -35,7 +35,7 @@ const CareerHero = () => {
             <LottieAnimation anime={heroAnimation}></LottieAnimation>
           </div>
         </div>
-      </ServicesSectionWrapper>
+      </SectionWrapper>
     </div>
   );
 };

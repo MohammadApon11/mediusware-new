@@ -5,7 +5,7 @@ import projectsHero from "../../assets/projects/allProjectsHero.png";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import { ProjectsData } from "@/data/ProjectsData";
 import AllProjects from "./components/AllProjects";
-import SectionsWrapper from "@/components/shared/wrapper's/SectionsWrapper";
+import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
 
 const ProjectsPage = () => {
   const data = {
@@ -21,13 +21,13 @@ const ProjectsPage = () => {
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
-      <SectionsWrapper>
+      <BigWidthSectionWrapper>
         <div className="grid grid-cols-3 gap-[24px]">
           {ProjectsData?.map((project, index) => (
             <AllProjects project={project} key={index} />
           ))}
         </div>
-      </SectionsWrapper>
+      </BigWidthSectionWrapper>
     </>
   );
 };

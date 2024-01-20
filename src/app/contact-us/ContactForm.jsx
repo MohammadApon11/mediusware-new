@@ -1,12 +1,11 @@
 import React from "react";
-import ServicesSectionWrapper from "../services/components/gap's/ServicesSectionWrapper";
+import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import { IoLocationSharp, IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
 
 const ContactForm = () => {
   return (
-    <ServicesSectionWrapper>
+    <SectionWrapper>
       <div className="flex items-center justify-between text-primary">
         <div>
           <div className="flex flex-col gap-[22px]">
@@ -79,7 +78,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-    </ServicesSectionWrapper>
+    </SectionWrapper>
   );
 };
 
