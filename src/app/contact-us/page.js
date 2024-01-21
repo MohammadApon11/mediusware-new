@@ -6,6 +6,7 @@ import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import Footer from "@/components/shared/Footer";
 import ContactForm from "./ContactForm";
 import LocationBox from "./LocationBox";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Contact Us",
@@ -21,7 +22,7 @@ const ContactPage = () => {
     description2: "inquiries within 24 hours on business days.",
   };
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -29,7 +30,7 @@ const ContactPage = () => {
       <SectionsGap />
       <LocationBox />
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

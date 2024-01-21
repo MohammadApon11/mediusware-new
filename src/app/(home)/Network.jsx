@@ -3,7 +3,7 @@ import React from "react";
 import img from "../../assets/all/52.png";
 import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 
-const Newtwork = () => {
+const Network = () => {
   return (
     <SectionWrapper>
       <div className="flex items-center justify-between">
@@ -22,4 +22,4 @@ const Newtwork = () => {
   );
 };
 
-export default Newtwork;
+export default Network;

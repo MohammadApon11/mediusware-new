@@ -7,6 +7,7 @@ import Features from "../components/Features";
 import TechnologyStack from "../components/TechnologyStack";
 import IndustrySlider from "../components/IndustrySlider";
 import ServicesSlider from "../components/ServicesSlider";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Services || Website Development",
@@ -16,7 +17,7 @@ export const metadata = {
 const WebDevelopmentPage = () => {
   const data = PageServicesData.find((data) => data.id === "web development");
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -26,7 +27,7 @@ const WebDevelopmentPage = () => {
       <IndustrySlider />
       <SectionsGap />
       <ServicesSlider />
-    </div>
+    </Inner>
   );
 };
 

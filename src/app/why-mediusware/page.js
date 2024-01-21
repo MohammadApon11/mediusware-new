@@ -4,6 +4,7 @@ import ServicesHero from "../services/components/ServicesHero";
 import hero1 from "../../assets/about/hero.jpg";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import AllAbout from "./AllAbout";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || About",
@@ -20,13 +21,13 @@ const WhyMediuswarePage = () => {
       "Mediusware helps the world run better and improves people’s lives.",
   };
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
       <AllAbout />
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

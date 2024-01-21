@@ -1,11 +1,11 @@
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
-import React from "react";
 import ServicesHero from "../services/components/ServicesHero";
 import projectsHero from "../../assets/projects/allProjectsHero.png";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import { ProjectsData } from "@/data/ProjectsData";
 import AllProjects from "./components/AllProjects";
 import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 const ProjectsPage = () => {
   const data = {
@@ -17,10 +17,9 @@ const ProjectsPage = () => {
       "updated regularly, fosters interactive community, valuable resources.",
   };
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
-      <SectionsGap />
       <BigWidthSectionWrapper>
         <div className="grid grid-cols-3 gap-[24px]">
           {ProjectsData?.map((project, index) => (
@@ -28,7 +27,7 @@ const ProjectsPage = () => {
           ))}
         </div>
       </BigWidthSectionWrapper>
-    </>
+    </Inner>
   );
 };
 

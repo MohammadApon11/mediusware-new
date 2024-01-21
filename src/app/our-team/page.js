@@ -4,6 +4,7 @@ import ServicesHero from "../services/components/ServicesHero";
 import heroImg from "../../assets/team/teamHero2.jpg";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import OurTeamCards from "./OurTeamCards";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Our Team",
@@ -20,13 +21,15 @@ const OurTeamPage = () => {
       "and talented software engineers, Developer, Designer, Marketer, SQA, HR and so on.",
   };
   return (
-    <div className="bg-white pb-[5px]">
-      <PaddingTop />
-      <ServicesHero data={data} />
-      <SectionsGap />
-      <OurTeamCards />
-      <SectionsGap />
-    </div>
+    <Inner>
+      <div className="bg-white pb-[5px]">
+        <PaddingTop />
+        <ServicesHero data={data} />
+        <SectionsGap />
+        <OurTeamCards />
+        <SectionsGap />
+      </div>
+    </Inner>
   );
 };
 

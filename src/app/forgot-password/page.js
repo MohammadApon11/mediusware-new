@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import img from "../../assets/all/login.svg";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Forgot Password",
@@ -12,7 +13,7 @@ export const metadata = {
 
 const ForgotPassword = () => {
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <SectionsGap />
       <div className="bg-white w-[800px] shadow-xl mx-auto p-[40px] text-primary ">
@@ -42,7 +43,7 @@ const ForgotPassword = () => {
         </form>
       </div>
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

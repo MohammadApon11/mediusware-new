@@ -7,6 +7,7 @@ import { PageServicesData } from "@/data/PageServicesData";
 import TechnologyStack from "../components/TechnologyStack";
 import IndustrySlider from "../components/IndustrySlider";
 import ServicesSlider from "../components/ServicesSlider";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Services || UI/UX Design & Development",
@@ -16,7 +17,7 @@ export const metadata = {
 const UIUXPage = () => {
   const data = PageServicesData.find((data) => data.id === "ui-ux development");
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -26,7 +27,7 @@ const UIUXPage = () => {
       <IndustrySlider />
       <SectionsGap />
       <ServicesSlider />
-    </div>
+    </Inner>
   );
 };
 

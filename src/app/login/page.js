@@ -4,6 +4,7 @@ import React from "react";
 import img from "../../assets/all/login.svg";
 import Image from "next/image";
 import Link from "next/link";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Login",
@@ -12,7 +13,7 @@ export const metadata = {
 
 const LoginPage = () => {
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <SectionsGap />
       <div className="bg-white w-[800px] shadow-xl mx-auto p-[40px] text-primary ">
@@ -48,7 +49,7 @@ const LoginPage = () => {
         </form>
       </div>
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

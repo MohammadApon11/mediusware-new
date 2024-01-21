@@ -7,6 +7,7 @@ import { PageServicesData } from "@/data/PageServicesData";
 import TechnologyStack from "../components/TechnologyStack";
 import IndustrySlider from "../components/IndustrySlider";
 import ServicesSlider from "../components/ServicesSlider";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Services || Digital Marketing",
@@ -16,7 +17,7 @@ export const metadata = {
 const MarketingPage = () => {
   const data = PageServicesData.find((data) => data.id === "digital marketing");
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -26,7 +27,7 @@ const MarketingPage = () => {
       <IndustrySlider />
       <SectionsGap />
       <ServicesSlider />
-    </div>
+    </Inner>
   );
 };
 

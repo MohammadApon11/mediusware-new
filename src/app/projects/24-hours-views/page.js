@@ -5,6 +5,7 @@ import { ProjectsData } from "@/data/ProjectsData";
 import React from "react";
 import ProjectsDetails from "../components/ProjectsDetails";
 import ContactBox from "../components/ContactBox";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Projects || 24 hours",
@@ -14,14 +15,14 @@ export const metadata = {
 const HoursViewPage = () => {
   const data = ProjectsData.find((project) => project.id === "24 hours views");
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
       <ProjectsDetails data={data} />
       <SectionsGap />
       <ContactBox />
-    </div>
+    </Inner>
   );
 };
 

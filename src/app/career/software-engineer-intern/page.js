@@ -6,6 +6,7 @@ import ContentGap from "@/components/shared/gap's/ContentGap";
 import RequirementDetails from "../components/RequirementDetails";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import WeOffer from "../components/WeOffer";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Career || Software Engineer Intern",
@@ -17,14 +18,14 @@ const SoftwareEngineerPage = () => {
     (job) => job.id === "software engineer intern"
   );
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <JobHero data={data} />
-      <ContentGap />
+<SectionsGap />
       <RequirementDetails data={data} />
       <SectionsGap />
       <WeOffer />
-    </>
+    </Inner>
   );
 };
 

@@ -1,11 +1,10 @@
 "use client";
-import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import React, { useContext } from "react";
 import RequirementTitle from "./RequirementTitle";
 import { SiPolkadot } from "react-icons/si";
 import Link from "next/link";
-import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
 import { InfoContext } from "@/providers/context";
+import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
 
 const RequirementDetails = ({ data }) => {
   const {
@@ -27,9 +26,8 @@ const RequirementDetails = ({ data }) => {
   } = data;
 
   const { name, setName } = useContext(InfoContext);
-  // console.log("from name", name);
   return (
-    <SectionWrapper>
+    <NormalSectionWrapper>
       <div className="grid grid-cols-3 gap-x-[30px]">
         <div className="col-span-2">
           <iframe
@@ -115,7 +113,10 @@ const RequirementDetails = ({ data }) => {
             <p className="mt-[20px]">{location}</p>
             <p>
               Google map address:{" "}
-              <Link className="text-secondary underline" href={"https://maps.app.goo.gl/93aJ9auNFqAyjpPk9"}>
+              <Link
+                className="text-secondary underline"
+                href={"https://maps.app.goo.gl/93aJ9auNFqAyjpPk9"}
+              >
                 https://maps.app.goo.gl/93aJ9auNFqAyjpPk9
               </Link>
             </p>
@@ -172,7 +173,7 @@ const RequirementDetails = ({ data }) => {
           ></iframe>
         </div>
       </div>
-    </SectionWrapper>
+    </NormalSectionWrapper>
   );
 };
 

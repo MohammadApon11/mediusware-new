@@ -5,6 +5,7 @@ import React from "react";
 import ProjectsDetails from "../components/ProjectsDetails";
 import ContactBox from "../components/ContactBox";
 import { ProjectsData } from "@/data/ProjectsData";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Projects || Woo Study",
@@ -14,14 +15,14 @@ export const metadata = {
 const WooStudyPage = () => {
     const data = ProjectsData.find((project) => project.id === "woo study");
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
       <ProjectsDetails data={data} />
       <SectionsGap />
       <ContactBox />
-    </>
+    </Inner>
   );
 };
 

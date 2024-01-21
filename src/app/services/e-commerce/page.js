@@ -7,6 +7,7 @@ import Features from "../components/Features";
 import TechnologyStack from "../components/TechnologyStack";
 import IndustrySlider from "../components/IndustrySlider";
 import ServicesSlider from "../components/ServicesSlider";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Services || E-Commerce  Solutions",
@@ -18,7 +19,7 @@ const ECommercePage = () => {
     (data) => data.id === "e-commerce development"
   );
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -28,7 +29,7 @@ const ECommercePage = () => {
       <IndustrySlider />
       <SectionsGap />
       <ServicesSlider />
-    </div>
+    </Inner>
   );
 };
 

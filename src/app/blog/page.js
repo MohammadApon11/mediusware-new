@@ -6,6 +6,7 @@ import AllBlogs from "./AllBlogs";
 import LatestBlogs from "./LatestPost";
 import MostPopularBlogs from "./MostPopularBlogs";
 import Message from "@/components/shared/Message";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Blogs",
@@ -14,7 +15,7 @@ export const metadata = {
 
 const BlogPage = () => {
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <CommonHero
         text1={"Blog"}
@@ -30,7 +31,7 @@ const BlogPage = () => {
       <SectionsGap />
       <Message />
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

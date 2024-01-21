@@ -6,7 +6,7 @@ import { IoCall } from "react-icons/io5";
 const ContactBox = () => {
   return (
     <SectionWrapper>
-      <div class="bg-gradient-to-b from-blue-500 via-blue-700 to-blue-900 p-[30px] flex items-center justify-between text-white rounded-[8px]">
+      <div className="bg-gradient-to-b from-blue-500 via-blue-700 to-blue-900 p-[30px] flex items-center justify-between text-white rounded-[8px]">
         <div>
           <h4 className="text-[25px] font-semibold">
             Have Any Project? Contact Us Today!

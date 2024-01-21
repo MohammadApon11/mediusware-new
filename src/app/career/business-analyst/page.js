@@ -6,6 +6,7 @@ import ContentGap from "@/components/shared/gap's/ContentGap";
 import RequirementDetails from "../components/RequirementDetails";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import WeOffer from "../components/WeOffer";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Career || Business Analyst",
@@ -15,14 +16,14 @@ export const metadata = {
 const BusinessAnalystPage = () => {
   const data = JobRequirementsData.find((job) => job.id === "business analyst");
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <JobHero data={data} />
-      <ContentGap />
+      <SectionsGap />
       <RequirementDetails data={data} />
       <SectionsGap />
       <WeOffer />
-    </>
+    </Inner>
   );
 };
 

@@ -1,8 +1,8 @@
-import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import Image from "next/image";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
 
 const ProjectsDetails = ({ data }) => {
   const {
@@ -25,8 +25,8 @@ const ProjectsDetails = ({ data }) => {
     management,
   } = data;
   return (
-    <SectionWrapper>
-      <SectionsGap />
+    <NormalSectionWrapper>
+      {/* <SectionsGap /> */}
       <Image
         className="rounded-[16px] w-[1200px] h-[750px] mx-auto"
         src={projectImage}
@@ -126,7 +126,7 @@ const ProjectsDetails = ({ data }) => {
           </div>
         </div>
       </div>
-    </SectionWrapper>
+    </NormalSectionWrapper>
   );
 };
 

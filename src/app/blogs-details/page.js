@@ -10,6 +10,7 @@ import TrendingBlogs from "@/components/shared/TrendingBlogs";
 import Meeting from "@/components/shared/Meeting";
 import LikedBlogs from "./LikedBlogs";
 import Message from "@/components/shared/Message";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Blogs Details",
@@ -18,7 +19,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <>
+    <Inner>
       <BigWidthSectionWrapper>
         <PaddingTop />
         <SectionsGap />
@@ -43,7 +44,7 @@ const page = () => {
       </BigWidthSectionWrapper>
       <Message />
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

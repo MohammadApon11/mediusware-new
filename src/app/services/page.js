@@ -2,11 +2,12 @@ import CommonHero from "@/components/shared/CommonHero";
 import Services from "@/components/shared/Services";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 import React from "react";
 
 const ServicesPage = () => {
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <CommonHero
         text1={"Services"}
@@ -15,7 +16,7 @@ const ServicesPage = () => {
       />
       <SectionsGap />
       <Services />
-    </>
+    </Inner>
   );
 };
 

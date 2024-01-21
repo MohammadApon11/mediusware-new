@@ -9,13 +9,14 @@ import OurClients from "./OurClients";
 import UseTech from "./UseTech";
 import IndustryWeServe from "./IndustryWeServe";
 import ReachBusiness from "./ReachBusiness";
-import Newtwork from "./Newtwork";
+import Network from "./Network";
 import PrimaryBtn from "@/components/shared/button's/PrimaryBtn";
 import ScrollWrapper from "@/components/shared/wrapper's/motion/ScrollWrapper";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 const HomePage = () => {
   return (
-    <>
+    <Inner>
       <ScrollWrapper />
       <PaddingTop />
       <HomeHero />
@@ -36,9 +37,9 @@ const HomePage = () => {
       <IndustryWeServe />
       <ReachBusiness />
       <SectionsGap />
-      <Newtwork />
+      <Network />
       <SectionsGap />
-    </>
+    </Inner>
   );
 };
 

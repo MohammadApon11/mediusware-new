@@ -5,6 +5,7 @@ import React from "react";
 import ProjectsDetails from "../components/ProjectsDetails";
 import { ProjectsData } from "@/data/ProjectsData";
 import ContactBox from "../components/ContactBox";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Projects || Galileo",
@@ -14,14 +15,14 @@ export const metadata = {
 const GalileoPage = () => {
     const data = ProjectsData.find((project) => project.id === "galileo");
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
       <ProjectsDetails data={data} />
       <SectionsGap />
       <ContactBox/>
-    </div>
+    </Inner>
   );
 };
 

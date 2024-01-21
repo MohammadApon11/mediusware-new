@@ -6,6 +6,7 @@ import RequirementDetails from "../components/RequirementDetails";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import WeOffer from "../components/WeOffer";
 import { JobRequirementsData } from "@/data/CareerData";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 export const metadata = {
   title: "Mediusware || Career || Frontend",
@@ -15,14 +16,14 @@ export const metadata = {
 const FronEndDeveloper = () => {
   const data = JobRequirementsData.find((job) => job.id === "front end developer");
   return (
-    <>
+    <Inner>
       <PaddingTop />
       <JobHero data={data} />
-      <ContentGap />
+<SectionsGap />
       <RequirementDetails data={data} />
       <SectionsGap />
       <WeOffer />
-    </>
+    </Inner>
   );
 };
 

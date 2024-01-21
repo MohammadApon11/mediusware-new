@@ -9,11 +9,11 @@ export const metadata = {
 
 const ProjectLayout = ({ children }) => {
   return (
-    <div>
+    <>
       {children}
       <ContentGap />
       <SectionsGap />
-    </div>
+    </>
   );
 };
 
