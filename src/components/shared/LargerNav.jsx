@@ -37,7 +37,7 @@ const NavLink = ({ item, index }) => {
       {item.title === "SERVICES" && (
         <div
           className="absolute top-[96px] left-[-20%] w-[300px] rounded-[7px]  transition-all duration-200 invisible group-hover:visible transform scale-0 group-hover:scale-100 
-         ease-in-out origin-top "
+         ease-in-out origin-top"
         >
           <div className="flex flex-col border-[1px] border-[#00A88E]  bg-white rounded-[5px] py-3 pl-[20px]">
             {SubNavData?.map((item, index) => (

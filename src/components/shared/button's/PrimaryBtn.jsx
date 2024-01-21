@@ -15,7 +15,7 @@ const PrimaryBtn = ({
     window.scrollBy(0, scroll);
   };
   return (
-    <div>
+    <>
       {scroll === null ? (
         <Link
           href={path}
@@ -38,12 +38,12 @@ const PrimaryBtn = ({
               : bgGray
               ? "tj-transparent-btn3 btn3"
               : "tj-transparent-btn btn"
-          } ${width && "w-[200px]"}`}
+          } ${width && "w-[170px]"}`}
         >
           {children}
         </button>
       )}
-    </div>
+    </>
   );
 };
 

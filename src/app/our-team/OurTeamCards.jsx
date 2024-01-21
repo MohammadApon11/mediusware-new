@@ -1,7 +1,6 @@
 import React from "react";
 import { TeamData } from "@/data/TeamData";
 import SingleCard from "./SingleCard";
-import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
 
 const OurTeamCards = () => {

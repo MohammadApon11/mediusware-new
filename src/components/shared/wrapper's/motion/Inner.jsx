@@ -15,7 +15,7 @@ const anim = (variants) => {
 const routes = {
   "/": "• Home",
   "/services": "• Services",
-  "/services/web-developent": "• Web Development",
+  "/services/web-development": "• Web Development",
   "/services/mobile-development": "• Mobile App Development",
   "/services/e-commerce": "• E-Commerce Solution",
   "/services/software-development": "• Software Development",
@@ -74,7 +74,7 @@ export default function Inner({ children }) {
         ease: [0.76, 0, 0.24, 1],
       },
       transitionEnd:{
-        top:"47.5%"
+        top:"60%"
       }
     },
     exit: {

@@ -23,6 +23,7 @@ import slider9 from "../../assets/about/9.jpg";
 import slider10 from "../../assets/about/10.jpg";
 import slider11 from "../../assets/about/11.jpg";
 import Image from "next/image";
+import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
 
 const sliderData = [
   slider1,
@@ -35,7 +36,7 @@ const sliderData = [
   slider8,
   slider9,
   slider10,
-  slider11
+  slider11,
 ];
 
 const AllAbout = () => {
@@ -74,7 +75,7 @@ const AllAbout = () => {
     ],
   };
   return (
-    <SectionWrapper>
+    <NormalSectionWrapper>
       <div className="flex flex-col gap-[70px]">
         <Temp
           title1={"Who"}
@@ -112,7 +113,13 @@ const AllAbout = () => {
           <Title title1={"Exclusive"} title2={"Gallery"} />
           <Slider {...settings} className="mt-[35px]">
             {sliderData.map((img, index) => (
-              <Image className="h-[300px] rounded-[12px]" src={img} key={index} width={300} height={200} />
+              <Image
+                className="h-[300px] rounded-[12px]"
+                src={img}
+                key={index}
+                width={300}
+                height={200}
+              />
             ))}
           </Slider>
         </div>
@@ -125,7 +132,7 @@ const AllAbout = () => {
           img={trans}
         />
       </div>
-    </SectionWrapper>
+    </NormalSectionWrapper>
   );
 };
 

@@ -50,14 +50,13 @@ const IndustrySlider = () => {
         <div className="mt-[50px]">
           <Slider {...settings}>
             {IndustryData?.map((industry, index) => (
-              <div key={index}>
-                <Image
-                  className="w-[100px]"
-                  src={industry}
-                  width={80}
-                  height={42}
-                />
-              </div>
+              <Image
+                className="w-[100px]"
+                src={industry}
+                width={80}
+                height={42}
+                key={index}
+              />
             ))}
           </Slider>
         </div>

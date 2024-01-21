@@ -3,6 +3,7 @@ import React from "react";
 import "../../../styles/common.css";
 import PrimaryBtn from "../../../components/shared/button's/PrimaryBtn";
 import { usePathname } from "next/navigation";
+import Reveal from "@/components/shared/wrapper's/motion/Reveal";
 
 const ServicesHero = ({ data }) => {
   const { title, heroImage, description1, description2 } = data;
@@ -17,12 +18,15 @@ const ServicesHero = ({ data }) => {
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-overlay"></div>
-      {/* Your content goes here */}
       <div className="z-10 text-white text-center">
-        <h1 className="text-[72px] font-semibold">{title}</h1>
-        <p className="text-[20px] text-center mt-[24px] mb-[24px]">
-          {description1} <br /> {description2}
-        </p>
+        <div className="text-[72px] font-semibold flex justify-center">
+          <Reveal>{title}</Reveal>
+        </div>
+        <div className="text-[20px] mt-[24px] mb-[24px] flex justify-center">
+          <Reveal>
+            {description1} <br /> {description2}
+          </Reveal>
+        </div>
         <div className="flex justify-center">
           <PrimaryBtn width={true} bg={true} path={"example"} scroll={500}>
             {pathName === "/contact-us" ? "Send Message" : "See More"}

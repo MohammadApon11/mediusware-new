@@ -1,15 +1,14 @@
-"use client"
 import React from "react";
 import LottieAnimation from "./LottieAnimation";
 import { FaRegCheckCircle } from "react-icons/fa";
+import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
 
 const Features = ({ data }) => {
   const { anime, features } = data;
   return (
-    <div className="w-[1400px] mx-auto">
+    <NormalSectionWrapper>
       <div className="flex items-center justify-between">
-        <div
-        >
+        <div>
           <h1 className="text-[40px] text-primary font-semibold">
             Key <span className="text-secondary">Features</span>
           </h1>
@@ -26,7 +25,7 @@ const Features = ({ data }) => {
           <LottieAnimation anime={anime} />
         </div>
       </div>
-    </div>
+    </NormalSectionWrapper>
   );
 };
 
