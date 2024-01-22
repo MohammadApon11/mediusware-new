@@ -16,7 +16,7 @@ const ReachBusiness = () => {
         {ReachBusinessData?.map((data, index) => (
           <TransitionWrapper1 index={index} key={index}>
             <div
-              className={`hover:shadow-lg p-[24px] transition-shadow duration-300 flex flex-col justify-center items-center text-center ${
+              className={`hover:shadow-lg p-[24px] transition-shadow duration-300 flex flex-col justify-center items-center text-center group ${
                 data.id % 2 === 0
                   ? "hover:shadow-[#00A88E]"
                   : "hover:shadow-[#0060AF]"
@@ -24,10 +24,10 @@ const ReachBusiness = () => {
               key={index}
             >
               <div
-                className={`w-[205px] h-[205px] mx-auto flex-initial items-center justify-center relative  before:content-[''] before:absolute before:w-[100%] before:h-[100%] before:left-0 before:bottom-0 before:border-[20px] before:border-solid before:border-[#EEF6FD] before:rounded-[50%] before:transition-all before:duration-700 before:transform z-[1] group  ${
+                className={`w-[205px] h-[205px] mx-auto flex-initial items-center justify-center relative  before:content-[''] before:absolute before:w-[100%] before:h-[100%] before:left-0 before:bottom-0 before:border-[20px] before:border-solid before:border-[#EEF6FD] before:rounded-[50%] before:transition-all before:duration-700 before:transform z-[1] ${
                   data.color === "green"
-                    ? "before:border-t-[#0060af] before:border-l-[#0060af] before:rotate-45 hover:before:-rotate-[135deg]"
-                    : "before:border-t-[#00A88E] before:border-l-[#00A88E] before:-rotate-[135deg] hover:before:rotate-45"
+                    ? "before:border-t-[#0060af] before:border-l-[#0060af] before:rotate-45 group-hover:before:-rotate-[135deg]"
+                    : "before:border-t-[#00A88E] before:border-l-[#00A88E] before:-rotate-[135deg] group-hover:before:rotate-45"
                 }`}
               >
                 <div

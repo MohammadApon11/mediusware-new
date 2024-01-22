@@ -21,21 +21,21 @@ const SingleBlog = ({ blog }) => {
       </div>
       <Image
         className={`rounded-[16px] md:h-[480px] sm:h-[430px] mobile:h-[360px] xs:h-[260px] transition-all hover:duration-300 hover:transform hover:scale-125 ${
-          id === 1 ? "w-[100%] lg:h-[100%]" : "w-[100%] lg:h-[100%] "
+          id % 2 === 0 ? "w-[100%] lg:h-[748px]" : "w-[100%] lg:h-[358px]"
         } bg-cover`}
         src={image?.src}
         width={832}
-        height={id === 1 ? 748 : 358}
+        height={id % 2 === 0 ? 748 : 358}
       />
       <div
-        className={`bg-cover absolute -bottom-[4px] right-0 ${
-          id === 1 ? "xl:h-[200px]" : "xl:h-[136px]"
+        className={`bg-cover absolute -bottom-[4px] left-0 ${
+          id % 2 === 0 ? "xl:h-[200px]" : "xl:h-[136px]"
         } lg:overflow-hidden`}
       >
         {/* larger vector */}
         <Image
-          className={`xl:h-full md:h-full sm:h-[130px] mobile:h-[130px] xxs:max-mobile:hidden ${
-            id === 1 ? "lg:h-[150px]" : "lg:h-[110px]"
+          className={`w-[100vw] xl:h-full md:h-full sm:h-[130px] mobile:h-[130px] xxs:max-mobile:hidden ${
+            id % 2 === 0 ? "lg:h-[150px]" : "lg:h-[110px]"
           }`}
           src={cardVector}
           width={832}
@@ -63,14 +63,14 @@ const SingleBlog = ({ blog }) => {
           </div>
           <div
             className={`flex items-center sm:gap-2 xxs:gap-[3px] sm:mr-[44px] xxs:mr-6 sm:-mt-8 xxs:-mt-3 ${
-              id === 1 ? "lg:-mt-8" : "lg:-mt-12"
+              id % 2 === 0 ? "lg:-mt-8" : "lg:-mt-12"
             }`}
           >
             {keys?.map((key, index) => (
               <button
                 key={index}
                 className={`bg-[#C2EAE4] hover:bg-[#accec9] text-[#002B4F] sm:px-[12px] xxs:px-[8px] sm:py-[4px] xxs:max-sm:text-[9px] sm:rounded-[8px] xxs:rounded-[5px] ${
-                  id === 1 ? "sm:text-[14px]" : "sm:text-[12px]"
+                  id % 2 === 0 ? "sm:text-[14px]" : "sm:text-[12px]"
                 }`}
               >
                 {key}
@@ -80,7 +80,7 @@ const SingleBlog = ({ blog }) => {
         </div>
         <p
           className={`absolute font-bold text-[#002B4F] md:text-[30px] sm:text-[25px] mobile:text-[19px] xxs:text-[20px] xxs:left-3 md:bottom-1 mobile:bottom-4 xxs:bottom-2 ${
-            id === 1
+            id % 2 === 0
               ? "2xl:text-[40px] xl:text-[36px] lg:text-[27px] xl:bottom-[3px] lg:bottom-[1px] sm:left-6"
               : "2xl:text-[24px] xl:text-[22px] lg:text-[19px] xl:bottom-[18px] lg:bottom-[12px] sm:left-6"
           }`}

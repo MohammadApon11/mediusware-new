@@ -11,8 +11,6 @@ const ProjectLayout = ({ children }) => {
   return (
     <>
       {children}
-      <ContentGap />
-      <SectionsGap />
     </>
   );
 };

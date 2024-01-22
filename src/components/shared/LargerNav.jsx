@@ -20,12 +20,16 @@ const NavLink = ({ item, index }) => {
         className={`hover:text-[#00A88E] group bigMon:px-[16px] bigMon:py-[35px] 2xl:px-[12px] 2xl:py-[30px] xl:px-[8px] xl:py-[30px] lg:px-[5px] lg:py-[26px] ${
           item.path === "/services" &&
           "flex items-center xl:gap-1 lg:-gap-[3px] "
-        }  ${activeRoute === `${item.path}` && "text-secondary"}`}
+        } ${
+          (activeRoute === "/" && "text-black") ||
+          (activeRoute === `${item.path}` && "text-secondary")
+        }`}
       >
         <span
           className={`bigMon:text-[20px] 2xl:text-[17px] lg:text-[14px] relative group-hover:after:content-[''] group-hover:after:bg-[#00A88E] group-hover:after:h-[3px] after:w-[0%] group-hover:after:left-0 group-hover:after:-bottom-[5px] group-hover:after:rounded-xl group-hover:after:absolute group-hover:after:w-[100%] group-hover:after:duration-700 ${
-            activeRoute === `${item.path}` &&
-            "after:content-[''] after:bg-[#00A88E] after:h-[3px] after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:w-[100%] after:duration-700"
+            (activeRoute === "/" && "text-black") ||
+            (activeRoute === `${item.path}` &&
+              "after:content-[''] after:bg-[#00A88E] after:h-[3px] after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:w-[100%] after:duration-700")
           }`}
         >
           {item.title}

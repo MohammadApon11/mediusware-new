@@ -1,6 +1,5 @@
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
-import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
 import React from "react";
 import DetailsBlogsHero from "./DetailsBlogsHero";
 import TableContents from "./TableContents";
@@ -11,6 +10,7 @@ import Meeting from "@/components/shared/Meeting";
 import LikedBlogs from "./LikedBlogs";
 import Message from "@/components/shared/Message";
 import Inner from "@/components/shared/wrapper's/motion/Inner";
+import BigWidthNormalSectionWrapper from "@/components/shared/wrapper's/BigWidthNormalSectionWrapper";
 
 export const metadata = {
   title: "Mediusware || Blogs Details",
@@ -20,7 +20,7 @@ export const metadata = {
 const page = () => {
   return (
     <Inner>
-      <BigWidthSectionWrapper>
+      <BigWidthNormalSectionWrapper>
         <PaddingTop />
         <SectionsGap />
         <DetailsBlogsHero />
@@ -41,7 +41,7 @@ const page = () => {
         <SectionsGap />
         <LikedBlogs />
         <SectionsGap />
-      </BigWidthSectionWrapper>
+      </BigWidthNormalSectionWrapper>
       <Message />
       <SectionsGap />
     </Inner>

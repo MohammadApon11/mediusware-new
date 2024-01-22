@@ -3,6 +3,7 @@ import SectionsHeader from "@/components/shared/SectionsHeader";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import React from "react";
 import ValuesCards from "./ValuesCards";
+import { TransitionWrapper2 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 const valuesData = [
   {
     id: 1,
@@ -75,7 +76,9 @@ const OurValues = () => {
       <SectionsGap />
       <div className="grid grid-cols-4 gap-[24px]">
         {valuesData?.map((values, index) => (
-          <ValuesCards key={index} values={values} />
+          <TransitionWrapper2 key={index} index={index}>
+            <ValuesCards values={values} />
+          </TransitionWrapper2>
         ))}
       </div>
     </SectionWrapper>

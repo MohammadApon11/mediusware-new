@@ -24,6 +24,7 @@ import slider10 from "../../assets/about/10.jpg";
 import slider11 from "../../assets/about/11.jpg";
 import Image from "next/image";
 import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
+import Reveal from "@/components/shared/wrapper's/motion/Reveal";
 
 const sliderData = [
   slider1,
@@ -110,7 +111,9 @@ const AllAbout = () => {
           img={mission}
         />
         <div>
-          <Title title1={"Exclusive"} title2={"Gallery"} />
+          <Reveal title={true} noTimer={true}>
+            <Title title1={"Exclusive"} title2={"Gallery"} />
+          </Reveal>
           <Slider {...settings} className="mt-[35px]">
             {sliderData.map((img, index) => (
               <Image

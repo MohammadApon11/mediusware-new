@@ -9,6 +9,7 @@ import CommonBtn from "./button's/CommonBtn";
 import Link from "next/link";
 import NavLink from "./LargerNav";
 import MobileNav from "./MobileNav";
+import Magnatic from "./wrapper's/motion/Magnatic";
 
 const NavBar = () => {
   return (
@@ -25,15 +26,21 @@ const NavBar = () => {
             </span>
           </div>
           <div className="flex items-center lg:gap-[8px] xxs:max-lg:gap-[10px]  xxs:max-mobile:text-[13px] text-white">
-            <Link href={"https://www.facebook.com/mediusware"}>
-              <FaFacebook />
-            </Link>
-            <Link href={"https://twitter.com/mediusware"}>
-              <AiFillTwitterCircle />
-            </Link>
-            <Link href={"https://www.linkedin.com/company/mediusware-ltd/"}>
-              <FaLinkedin />
-            </Link>
+            <Magnatic>
+              <Link href={"https://www.facebook.com/mediusware"}>
+                <FaFacebook />
+              </Link>
+            </Magnatic>
+            <Magnatic>
+              <Link href={"https://twitter.com/mediusware"}>
+                <AiFillTwitterCircle />
+              </Link>
+            </Magnatic>
+            <Magnatic>
+              <Link href={"https://www.linkedin.com/company/mediusware-ltd/"}>
+                <FaLinkedin />
+              </Link>
+            </Magnatic>
           </div>
         </div>
       </div>

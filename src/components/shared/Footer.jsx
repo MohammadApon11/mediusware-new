@@ -19,6 +19,7 @@ import Image from "next/image";
 import "../../styles/footer.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Magnatic from "./wrapper's/motion/Magnatic";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,7 +28,7 @@ const Footer = () => {
 
   return (
     <div
-      className="relative bg-no-repeat bg-cover bg-center footerBg"
+      className="relative bg-no-repeat bg-cover bg-center"
       style={{
         backgroundImage: `url(${footerbg.src})`,
       }}
@@ -65,18 +66,36 @@ const Footer = () => {
             <Image src={footerLogo} width={173} height={100} />
             <p className="mt-[24px]">We shape the art of technology</p>
             <div className="flex items-center gap-[12px] mt-[24px]">
-              <Link className="z-10" href={"https://www.facebook.com/mediusware"}>
-                <Image src={facebook} width={32} height={32} />
-              </Link>
-              <Link className="z-10" href={"https://www.linkedin.com/company/mediusware-ltd/"}>
-                <Image src={linkedin} width={32} height={32} />
-              </Link>
-              <Link className="z-10" href={"https://twitter.com/mediusware"}>
-                <Image src={twitter} width={32} height={32} />
-              </Link>
-              <Link className="z-10" href={"https://www.youtube.com/@mediuswareltd.4437"}>
-                <Image src={youtube} width={32} height={32} />
-              </Link>
+              <Magnatic>
+                <Link
+                  className="z-10"
+                  href={"https://www.facebook.com/mediusware"}
+                >
+                  <Image src={facebook} width={32} height={32} />
+                </Link>
+              </Magnatic>
+              <Magnatic>
+                {" "}
+                <Link
+                  className="z-10"
+                  href={"https://www.linkedin.com/company/mediusware-ltd/"}
+                >
+                  <Image src={linkedin} width={32} height={32} />
+                </Link>
+              </Magnatic>
+              <Magnatic>
+                <Link className="z-10" href={"https://twitter.com/mediusware"}>
+                  <Image src={twitter} width={32} height={32} />
+                </Link>
+              </Magnatic>
+              <Magnatic>
+                <Link
+                  className="z-10"
+                  href={"https://www.youtube.com/@mediuswareltd.4437"}
+                >
+                  <Image src={youtube} width={32} height={32} />
+                </Link>
+              </Magnatic>
             </div>
           </div>
           <div className="flex flex-col gap-3 z-10">
@@ -151,7 +170,9 @@ const Footer = () => {
             </Link>
             <Link
               href={
-                pathName.startsWith("/services") ? "e-commerce" : "services/e-commerce"
+                pathName.startsWith("/services")
+                  ? "e-commerce"
+                  : "services/e-commerce"
               }
               className="hover:underline"
             >

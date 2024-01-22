@@ -41,6 +41,7 @@ const routes = {
   "/career/front-end-developer": "• Front End Developer",
   "/career/team-lead-mern-developer": "• Team Lead Mern Developer",
   "/blog": "• Blog",
+  "/blogs-details": "• Blog Details",
   "/why-mediusware": "• About Us",
   "/career": "• Career",
   "/our-team": "• Our Team",
@@ -73,9 +74,9 @@ export default function Inner({ children }) {
         delay: 0.3,
         ease: [0.76, 0, 0.24, 1],
       },
-      transitionEnd:{
-        top:"60%"
-      }
+      transitionEnd: {
+        top: "60%",
+      },
     },
     exit: {
       opacity: 1,

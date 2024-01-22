@@ -7,6 +7,7 @@ const Reveal = ({
   width = "fit-content" || "100%",
   bg = "bg-[#0060AF]",
   title = false,
+  noTimer = false,
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -16,10 +17,13 @@ const Reveal = ({
 
   useEffect(() => {
     if (isInView) {
-      setTimeout(() => {
-        mainControls.start("visible");
-        slideControls.start("visible");
-      }, 400);
+      setTimeout(
+        () => {
+          mainControls.start("visible");
+          slideControls.start("visible");
+        },
+        noTimer ? 0 : 400
+      );
     }
   }, [isInView]);
   return (

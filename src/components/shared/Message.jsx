@@ -4,6 +4,7 @@ import clutch from "../../assets/blog-page/clutch.png";
 import upwork from "../../assets/blog-page/upwork.png";
 import { IoStarSharp } from "react-icons/io5";
 import { LuSend } from "react-icons/lu";
+import Counter from "./Counter";
 
 const Message = () => {
   return (
@@ -19,18 +20,26 @@ const Message = () => {
         <div className="h-[1px] w-[100%] bg-[#E5E7EB] mt-[40px]"></div>
         <div className="flex items-center mt-[40px] gap-[32px]">
           <div className="bg-white p-[16px] rounded-[8px] text-[#0694A2] text-[16px]">
-            <h3 className="font-bold text-[#2E7DBD] text-[30px]">10+</h3>
+            <h3 className="font-bold text-[#2E7DBD] text-[30px]">
+              {" "}
+              <Counter end={10} />+
+            </h3>
             <p>Years in</p>
             <p>business</p>
           </div>
           <div className="bg-white p-[16px] -mb-[24px] rounded-[8px] text-[#0694A2] text-[16px]">
-            <h3 className="font-bold text-[#2E7DBD] text-[30px]">100+</h3>
+            <h3 className="font-bold text-[#2E7DBD] text-[30px]">
+              <Counter end={100} />+
+            </h3>
             <p>In-</p>
             <p>house</p>
             <p>employees</p>
           </div>
           <div className="bg-white p-[16px] rounded-[8px] text-[#0694A2] text-[16px]">
-            <h3 className="font-bold text-[#2E7DBD] text-[30px]">250+</h3>
+            <h3 className="font-bold text-[#2E7DBD] text-[30px]">
+              {" "}
+              <Counter end={700} />+
+            </h3>
             <p>succesful</p>
             <p>delivery project</p>
           </div>

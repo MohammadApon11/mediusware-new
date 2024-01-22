@@ -4,6 +4,7 @@ import NavBar from "@/components/shared/NavBar";
 import { InfoProvider } from "@/providers/context";
 import Footer from "@/components/shared/Footer";
 import Inner from "@/components/shared/wrapper's/motion/Inner";
+import FooterWrapper from "@/components/shared/wrapper's/FooterWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ const RootLayout = ({ children }) => {
           <div className="bg-gradient-to-l from-[#EEF4F9] from-10% via-[#EAF7F5] via-30% to-[#EEF4F9] to-90% bg-no-repeat">
             <NavBar />
             {children}
-            <Footer />
+            <FooterWrapper />
           </div>
         </body>
       </InfoProvider>

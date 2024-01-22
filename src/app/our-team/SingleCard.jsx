@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useContext } from "react";
 import profileBg from "../../assets/team/profileBg.png";
 import Image from "next/image";
@@ -6,10 +6,12 @@ import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { InfoContext } from "@/providers/context";
 
-const SingleCard = ({member}) => {
-    const { setMember } = useContext(InfoContext);
+const SingleCard = ({ member }) => {
+  
+  const { setMember } = useContext(InfoContext);
+
   return (
-    <div className="mx-auto text-center">
+    <div className="text-center flex items-center flex-col">
       <Link
         onClick={() => setMember(member)}
         href={`our-team/${member?.name.split(" ").join("-")}`}
@@ -19,7 +21,7 @@ const SingleCard = ({member}) => {
         }}
       >
         <Image
-          className=" w-[210px] h-[210px] rounded-full group-hover:scale-110 transition-all duration-300"
+          className="w-[210px] h-[210px] rounded-full group-hover:scale-110 transition-all duration-300"
           src={member?.image}
           width={300}
           height={300}

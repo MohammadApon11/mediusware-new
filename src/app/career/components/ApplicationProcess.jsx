@@ -1,10 +1,10 @@
 import SectionsHeader from "@/components/shared/SectionsHeader";
 import ContentGap from "@/components/shared/gap's/ContentGap";
-import BigWidthSectionWrapper from "@/components/shared/wrapper's/BigWidthSectionWrapper";
 import { ApplicationProcessData } from "@/data/CareerData";
 import React from "react";
 import ProcessCards from "./ProcessCards";
 import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
+import { TransitionWrapper1 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const ApplicationProcess = () => {
   return (
@@ -19,7 +19,9 @@ const ApplicationProcess = () => {
       <>
         <div className="grid grid-cols-5 gap-x-[20px]">
           {ApplicationProcessData?.map((process, index) => (
-            <ProcessCards key={index} process={process} />
+            <TransitionWrapper1 key={index} index={index}>
+              <ProcessCards process={process} />
+            </TransitionWrapper1>
           ))}
         </div>
       </>

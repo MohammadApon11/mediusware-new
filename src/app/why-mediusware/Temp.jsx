@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import Image from "next/image";
+import Reveal from "@/components/shared/wrapper's/motion/Reveal";
 
 const Temp = ({ title1, title2, description, img }) => {
   return (
@@ -14,13 +15,18 @@ const Temp = ({ title1, title2, description, img }) => {
       }`}
     >
       <div>
-        <Title title1={title1} title2={title2} />
+        <Reveal title={true} noTimer={true}>
+          {" "}
+          <Title title1={title1} title2={title2} />
+        </Reveal>
         <p className={`mt-[40px] ${title1 === "Our" && "mb-[40px]"}`}>
           {description}
         </p>
         {title1 === "Our" && (
           <>
-            <Title title1={title1} title2={"Vission"} />
+            <Reveal title={true} noTimer={true}>
+              <Title title1={title1} title2={"Vission"} />
+            </Reveal>
             <p>
               Deliver one-of-a-kind digital solutions to facilitate global
               businesses, powered by innovation and guided by integrity.

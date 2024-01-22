@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import image1 from "../../../assets/career/1.png";
 import image2 from "../../../assets/career/2.png";
@@ -11,6 +12,8 @@ import SectionWrapper from "@/components/shared/wrapper's/SectionWrapper";
 import Image from "next/image";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import SectionsHeader from "@/components/shared/SectionsHeader";
+import { TransitionWrapper2 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
+import Magnatic from "@/components/shared/wrapper's/motion/Magnatic";
 
 const WeOFferData = [
   { id: 1, image: image1, title: "Boost Yourself With Unlimited Coffee" },
@@ -30,10 +33,21 @@ const WeOffer = () => {
       <ContentGap />
       <div className="grid grid-cols-4 gap-[24px]">
         {WeOFferData?.map((data, index) => (
-          <div className="hover:shadow-2xl px-[40px] py-[50px] transition-all duration-300" key={index}>
-            <Image className="mx-auto" src={data.image} width={60} height={60} />
-            <p className="text-[#0060af] text-center font-semibold mt-[24px]">{data.title}</p>
-          </div>
+          <Magnatic>
+            <TransitionWrapper2 key={index} index={index}>
+              <div className="hover:shadow-2xl px-[40px] py-[50px] transition-all duration-300">
+                <Image
+                  className="mx-auto"
+                  src={data.image}
+                  width={60}
+                  height={60}
+                />
+                <p className="text-[#0060af] text-center font-semibold mt-[24px]">
+                  {data.title}
+                </p>
+              </div>
+            </TransitionWrapper2>
+          </Magnatic>
         ))}
       </div>
     </SectionWrapper>

@@ -38,7 +38,7 @@ const PrimaryBtn = ({
               : bgGray
               ? "tj-transparent-btn3 btn3"
               : "tj-transparent-btn btn"
-          } ${width && "w-[170px]"}`}
+          } ${width && "w-[180px]"}`}
         >
           {children}
         </button>
