@@ -6,6 +6,7 @@ import DesignProject from "./DesignProject";
 import TechFilter from "./TechFilter";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import MoreStudies from "./MoreStudies";
+import ClientsFeedback from "./ClientsFeedback";
 
 const DetailsProject = ({ data }) => {
   const {
@@ -79,6 +80,7 @@ const DetailsProject = ({ data }) => {
         <MoreStudies />
       </div>
       <SectionsGap />
+      <ClientsFeedback />
     </div>
   );
 };

@@ -7,6 +7,10 @@ import img1 from "../../../assets/tech/js.png";
 import img2 from "../../../assets/tech/html.png";
 import Image from "next/image";
 import arrow from "../../../assets/all/top-arrow.png";
+import {
+  TransitionWrapper1,
+  TransitionWrapper2,
+} from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const TechFilter = () => {
   const [activeText, setAcitveText] = useState("All");
@@ -60,57 +64,56 @@ const TechFilter = () => {
       <ContentGap />
       <div className="flex items-center gap-[24px]">
         {filterText.map((item, index) => (
-          <button
-            onClick={() => handleFilter(item)}
-            key={index}
-            className={`${
-              activeText === item
-                ? "btn-bg"
-                : "px-[24px] py-[12px] rounded-[12px] bg-white border"
-            }`}
-          >
-            {item}
-          </button>
+          <TransitionWrapper1 key={index} index={index}>
+            <button
+              onClick={() => handleFilter(item)}
+              className={`${
+                activeText === item
+                  ? "btn-bg"
+                  : "px-[24px] py-[12px] rounded-[12px] bg-white border"
+              }`}
+            >
+              {item}
+            </button>
+          </TransitionWrapper1>
         ))}
       </div>
       <ContentGap />
       <div className="flex items-center gap-[24px]">
         {activeText === "All"
           ? allTech?.tech?.map((item, index) => (
-              <div
-                className="w-[264px] h-[188px] rounded-[8px] bg-white flex items-center px-[32px]"
-                key={index}
-              >
-                <div>
-                  <Image
-                    className="h-[40px] w-[40px] "
-                    src={item?.image}
-                    width={40}
-                    height={40}
-                  />
-                  <h1 className="text-primary text-[32px] font-semibold mt-[12px]">
-                    {item?.title}
-                  </h1>
+              <TransitionWrapper1 key={index} index={index}>
+                <div className="w-[264px] h-[188px] rounded-[8px] bg-white flex items-center px-[32px]">
+                  <div>
+                    <Image
+                      className="h-[40px] w-[40px] "
+                      src={item?.image}
+                      width={40}
+                      height={40}
+                    />
+                    <h1 className="text-primary text-[32px] font-semibold mt-[12px]">
+                      {item?.title}
+                    </h1>
+                  </div>
                 </div>
-              </div>
+              </TransitionWrapper1>
             ))
           : filteredTech?.tech?.map((item, index) => (
-              <div
-                className="w-[264px] h-[188px] rounded-[8px] bg-white flex items-center px-[32px]"
-                key={index}
-              >
-                <div>
-                  <Image
-                    className="h-[40px] w-[40px] "
-                    src={item?.image}
-                    width={40}
-                    height={40}
-                  />
-                  <h1 className="text-primary text-[32px] font-semibold mt-[12px]">
-                    {item?.title}
-                  </h1>
+              <TransitionWrapper1 key={index} index={index}>
+                <div className="w-[264px] h-[188px] rounded-[8px] bg-white flex items-center px-[32px]">
+                  <div>
+                    <Image
+                      className="h-[40px] w-[40px] "
+                      src={item?.image}
+                      width={40}
+                      height={40}
+                    />
+                    <h1 className="text-primary text-[32px] font-semibold mt-[12px]">
+                      {item?.title}
+                    </h1>
+                  </div>
                 </div>
-              </div>
+              </TransitionWrapper1>
             ))}
       </div>
       <ContentGap />

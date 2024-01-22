@@ -5,6 +5,7 @@ import SingleProject from "./SingleProject";
 import Title from "@/app/why-mediusware/Title";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import LoadMoreBtn from "@/components/shared/button's/LoadMoreBtn";
+import { TransitionWrapper1 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const MoreStudies = () => {
   return (

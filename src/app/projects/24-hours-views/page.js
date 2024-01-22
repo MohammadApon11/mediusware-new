@@ -4,6 +4,7 @@ import { ProjectsData } from "@/data/ProjectsData";
 import Inner from "@/components/shared/wrapper's/motion/Inner";
 import SingleProjectsHero from "../components2/SingleProjectsHero";
 import DetailsProject from "../components2/DetailsProject";
+import Message from "@/components/shared/Message";
 
 export const metadata = {
   title: "Mediusware || Projects || 24 hours",
@@ -19,6 +20,9 @@ const HoursViewPage = () => {
       <SectionsGap />
       <DetailsProject data={data} />
       <SectionsGap />
+      <div className="bg-white py-[96px]">
+        <Message />
+      </div>
     </Inner>
   );
 };

@@ -3,8 +3,9 @@ import Image from "next/image";
 import React from "react";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import spark from "../../../assets/all/sparkles.png";
+import Counter from "@/components/shared/Counter";
 
-const Results = ({result}) => {
+const Results = ({ result }) => {
   return (
     <div className="bg-white py-[96px]">
       <BigWidthNormalSectionWrapper>
@@ -18,17 +19,23 @@ const Results = ({result}) => {
           <ContentGap />
           <div className="flex items-center justify-center gap-[24px]">
             <div className="text-center px-[70px] border-r">
-              <h1 className="text-rgb font-extrabold text-[72px]">40%</h1>
+              <h1 className="text-rgb font-extrabold text-[72px]">
+                <Counter end={40} />%
+              </h1>
               <p className="text-[24px] text-[#004C40]">
                 We increased sales by
               </p>
             </div>
             <div className="text-center px-[70px] border-r">
-              <h1 className="text-rgb font-extrabold text-[72px]">9.10 x</h1>
+              <h1 className="text-rgb font-extrabold text-[72px]">
+                <Counter end={9.6} /> x
+              </h1>
               <p className="text-[24px] text-[#004C40]">Return on investment</p>
             </div>
             <div className="text-center px-[70px]">
-              <h1 className="text-rgb font-extrabold text-[72px]">45%</h1>
+              <h1 className="text-rgb font-extrabold text-[72px]">
+                <Counter end={45} />%
+              </h1>
               <p className="text-[24px] text-[#004C40]">
                 Increase in placed order rate
               </p>

@@ -8,7 +8,7 @@ import Counter from "./Counter";
 
 const Message = () => {
   return (
-    <div className="w-[1408px] mx-auto p-[64px] rounded-[24px] flex items-center gap-[95px] bg-gradient-to-r from-[#0072BC] to-[#009FA9]">
+    <div className="w-[1408px] mx-auto p-[64px] rounded-[24px] flex items-center gap-[95px] bg-rgb">
       <div className="text-white">
         <h1 className="text-[72px] font-bold">
           Do you want to <br /> start a project?

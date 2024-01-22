@@ -7,6 +7,10 @@ import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import ProjectCard from "./SingleProject";
 import LoadMoreBtn from "@/components/shared/button's/LoadMoreBtn";
+import {
+  TransitionWrapper1,
+  TransitionWrapper2,
+} from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const Projects = () => {
   const [btnTitle, setBtnTitle] = useState("All");
@@ -34,17 +38,18 @@ const Projects = () => {
       <ContentGap />
       <div className="flex items-center gap-[16px] flex-wrap justify-center">
         {projectsFilterBtn.map((item, index) => (
-          <button
-            onClick={() => setBtnTitle(item.title)}
-            className={`border rounded-[8px] ${
-              item.title === btnTitle
-                ? "btn-bg"
-                : "py-[12px] px-[24px] border rounded-[12px] bg-white"
-            }`}
-            key={index}
-          >
-            {item.title}
-          </button>
+          <TransitionWrapper1 key={index} index={2}>
+            <button
+              onClick={() => setBtnTitle(item.title)}
+              className={`border rounded-[8px] ${
+                item.title === btnTitle
+                  ? "btn-bg"
+                  : "py-[12px] px-[24px] border rounded-[12px] bg-white"
+              }`}
+            >
+              {item.title}
+            </button>
+          </TransitionWrapper1>
         ))}
       </div>
       <ContentGap />

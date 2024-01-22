@@ -4,7 +4,6 @@ import React from "react";
 import arrowRigth from "../../../assets/all/arrow-right.png";
 import proImg from "../../../assets/all/proImg.png";
 import proMobile from "../../../assets/all/proMobile.png";
-import Features from "@/app/services/components/Features";
 
 const TempDetails = ({
   image,
@@ -33,6 +32,7 @@ const TempDetails = ({
             imgLeft ? "flex-row-reverse" : "flex-grow"
           } ${feature ? "w-[1500px] mx-auto" : ""}`}
         >
+          {" "}
           <div className={`relative w-[49%]`}>
             <Image
               className=""

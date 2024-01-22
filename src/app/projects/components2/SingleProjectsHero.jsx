@@ -6,6 +6,7 @@ import hero from "../../../assets/all/projectHero.png";
 import Image from "next/image";
 import ContentGap from "@/components/shared/gap's/ContentGap";
 import upArrow from "../../../assets/all/up-arrow.png";
+import Reveal from "@/components/shared/wrapper's/motion/Reveal";
 
 const SingleProjectsHero = ({ data }) => {
   const { title, projectImage, description1, description2 } = data;
@@ -15,15 +16,25 @@ const SingleProjectsHero = ({ data }) => {
       <div className="flex items-center justify-between">
         <div className="text-primary">
           <h1 className="text-[72px] font-bold">
-            VidaProjects <span className="text-secondary">SaaS</span>
+            <Reveal bg="bg-[#00A88E]" title={true}>
+              VidaProjects <span className="text-secondary">SaaS</span>
+            </Reveal>
           </h1>
-          <h1 className="text-[72px] font-bold -mt-[15px]">Project</h1>
-          <p className="text-[32px] text-[#475467] mt-[40px]">
-            A Platform Designed for Contractors Seeking to
-          </p>
-          <p className="text-[32px] text-[#475467]">
-            Streamline Project Management
-          </p>
+          <h1 className="text-[72px] font-bold -mt-[15px]">
+            <Reveal title={true} bg="bg-[#00A88E]">
+              Project
+            </Reveal>
+          </h1>
+          <Reveal>
+            <p className="text-[32px] text-[#475467] mt-[40px]">
+              A Platform Designed for Contractors Seeking to
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="text-[32px] text-[#475467]">
+              Streamline Project Management
+            </p>
+          </Reveal>
           <button className="btn-bg flex items-center gap-[16px] mt-[56px]">
             Request a Quote <Image src={arrow} width={15} height={15} />
           </button>
