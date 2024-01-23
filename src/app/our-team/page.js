@@ -1,10 +1,13 @@
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import React from "react";
-import ServicesHero from "../services/components/ServicesHero";
-import heroImg from "../../assets/team/teamHero2.jpg";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import OurTeamCards from "./OurTeamCards";
 import Inner from "@/components/shared/wrapper's/motion/Inner";
+import CommonHero from "@/components/shared/CommonHero";
+import MemberFilter from "./MemberFilter";
+import ChiefCard from "./ChiefCard";
+import Message from "@/components/shared/Message";
+import AskedQuestions from "./AskedQuestions";
 
 export const metadata = {
   title: "Mediusware || Our Team",
@@ -12,23 +15,25 @@ export const metadata = {
 };
 
 const OurTeamPage = () => {
-  const data = {
-    title: "MEET OUR TEAM",
-    heroImage: heroImg,
-    description1:
-      "Explore our diverse team of skilled professionals, from visionary founder and CEO to dedicated project managers ",
-    description2:
-      "and talented software engineers, Developer, Designer, Marketer, SQA, HR and so on.",
-  };
   return (
     <Inner>
-      <div className="bg-white pb-[5px]">
-        <PaddingTop />
-        <ServicesHero data={data} />
-        <SectionsGap />
-        <OurTeamCards />
-        <SectionsGap />
+      <PaddingTop />
+      <CommonHero
+        title1={"THE ROOT OF"}
+        title2={"OUR INTELLECT."}
+        subTitle={"We are 100+ People"}
+      />
+      <SectionsGap />
+      <MemberFilter />
+      <SectionsGap />
+      <div className="border-b w-full"></div>
+      <OurTeamCards />
+      <div className="bg-white py-[96px]">
+        <Message />
       </div>
+      <SectionsGap />
+      <AskedQuestions />
+      <SectionsGap />
     </Inner>
   );
 };

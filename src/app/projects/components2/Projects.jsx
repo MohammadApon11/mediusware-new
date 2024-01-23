@@ -9,7 +9,6 @@ import ProjectCard from "./SingleProject";
 import LoadMoreBtn from "@/components/shared/button's/LoadMoreBtn";
 import {
   TransitionWrapper1,
-  TransitionWrapper2,
 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const Projects = () => {

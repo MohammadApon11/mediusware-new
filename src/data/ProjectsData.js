@@ -1,12 +1,18 @@
-// hero
-import AllProjectHero from "../assets/projects/projectHero.png";
 // project image
-import project1 from "../assets/projects/24.png";
-import project2 from "../assets/projects/hr.png";
-import project3 from "../assets/projects/marketing.png";
-import project4 from "../assets/projects/affiliate.png";
-import project5 from "../assets/projects/rent.png";
-import project6 from "../assets/projects/education.png";
+import project1 from "../assets/projects/1-removebg-preview.png";
+import project2 from "../assets/projects/2-removebg-preview.png";
+import project3 from "../assets/projects/3-removebg-preview.png";
+import project4 from "../assets/projects/4-removebg-preview.png";
+import project5 from "../assets/projects/5-removebg-preview.png";
+import project6 from "../assets/projects/6-removebg-preview.png";
+
+// card image
+import card1 from "../assets/projects/card1.jpg";
+import card2 from "../assets/projects/card2.jpg";
+import card3 from "../assets/projects/card1.jpg";
+import card4 from "../assets/projects/card2.jpg";
+import card5 from "../assets/projects/card1.jpg";
+import card6 from "../assets/projects/card2.jpg";
 
 // tech images
 import backend1 from "../assets/tech/1.png";
@@ -32,10 +38,12 @@ import management3 from "../assets/tech/13.png";
 export const ProjectsData = [
   {
     id: "24 hours views",
-    industry:"Construction",
+    industry: "Construction",
+    techBase: "Full Stack",
     path: "24-hours-views",
-    title: "24 HOURS VIEWS",
-    heroImage: AllProjectHero,
+    title: "24 HOURS",
+    title2: "Views",
+    cardImage: card1,
     description1: "Social media promotion has turned out to be a major ",
     description2: "opportunity for modern businesses.",
     projectImage: project1,
@@ -79,10 +87,11 @@ export const ProjectsData = [
   },
   {
     id: "galileo",
-    industry:"ERP",
+    industry: "ERP",
     path: "galileo",
     title: "GALILEO",
-    heroImage: AllProjectHero,
+   
+    cardImage: card2,
     projectImage: project2,
     description1: "Galileo is an HR management project for",
     description2: "SAAS-based companies.",
@@ -125,10 +134,11 @@ export const ProjectsData = [
   },
   {
     id: "info stream web",
-    industry:"STREAM",
+    industry: "STREAM",
     path: "info-stream-web",
     title: "INFO STREAM WEB",
-    heroImage: AllProjectHero,
+   
+    cardImage: card1,
     projectImage: project3,
     description1:
       "Scorecard is a Digital Marketing management system, that shows an overview",
@@ -167,10 +177,11 @@ export const ProjectsData = [
   },
   {
     id: "product advisor",
-    industry:"E-Commerce",
+    industry: "E-Commerce",
     path: "product-advisor",
     title: "PRODUCT ADVISOR",
-    heroImage: AllProjectHero,
+   
+    cardImage: card1,
     projectImage: project4,
     description1:
       "Product Advisor is a top-level affiliate web app, which delivers support to advanced API ",
@@ -215,10 +226,11 @@ export const ProjectsData = [
   },
   {
     id: "short term rental",
-    industry:"Services",
+    industry: "Services",
     path: "short-term-rental",
     title: "SHORT TERM RENTAL",
-    heroImage: AllProjectHero,
+   
+    cardImage: card1,
     projectImage: project5,
     description1: "Short Term Rental is an app that helps to identify and",
     description2: "manage short-term rental properties.",
@@ -257,10 +269,11 @@ export const ProjectsData = [
   },
   {
     id: "woo study",
-    industry:"Edcucational",
+    industry: "Edcucational",
     path: "woo-study",
     title: "WOO STUDY",
-    heroImage: AllProjectHero,
+   
+    cardImage: card1,
     projectImage: project6,
     description1: "WooStudy is an Educational Networking platform in which",
     description2: "you can register yourself and apply for studying abroad,",

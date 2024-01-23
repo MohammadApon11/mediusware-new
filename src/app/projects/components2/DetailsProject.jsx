@@ -4,7 +4,6 @@ import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import TempDetails from "./TempDetails";
 import DesignProject from "./DesignProject";
 import TechFilter from "./TechFilter";
-import ContentGap from "@/components/shared/gap's/ContentGap";
 import MoreStudies from "./MoreStudies";
 import ClientsFeedback from "./ClientsFeedback";
 

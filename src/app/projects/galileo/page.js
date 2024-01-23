@@ -1,11 +1,11 @@
-import ServicesHero from "@/app/services/components/ServicesHero";
 import PaddingTop from "@/components/shared/gap's/PaddingTop";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import React from "react";
-import ProjectsDetails from "../components/ProjectsDetails";
 import { ProjectsData } from "@/data/ProjectsData";
-import ContactBox from "../components/ContactBox";
 import Inner from "@/components/shared/wrapper's/motion/Inner";
+import SingleProjectsHero from "../components2/SingleProjectsHero";
+import DetailsProject from "../components2/DetailsProject";
+import Message from "@/components/shared/Message";
 
 export const metadata = {
   title: "Mediusware || Projects || Galileo",
@@ -13,15 +13,17 @@ export const metadata = {
 };
 
 const GalileoPage = () => {
-    const data = ProjectsData.find((project) => project.id === "galileo");
+  const data = ProjectsData.find((project) => project.id === "galileo");
   return (
     <Inner>
       <PaddingTop />
-      <ServicesHero data={data} />
+      <SingleProjectsHero data={data} />
       <SectionsGap />
-      <ProjectsDetails data={data} />
+      <DetailsProject data={data} />
       <SectionsGap />
-      <ContactBox/>
+      <div className="bg-white py-[96px]">
+        <Message />
+      </div>
     </Inner>
   );
 };

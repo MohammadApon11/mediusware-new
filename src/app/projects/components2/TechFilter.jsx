@@ -8,8 +8,7 @@ import img2 from "../../../assets/tech/html.png";
 import Image from "next/image";
 import arrow from "../../../assets/all/top-arrow.png";
 import {
-  TransitionWrapper1,
-  TransitionWrapper2,
+  TransitionWrapper1
 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const TechFilter = () => {

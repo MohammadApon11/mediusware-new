@@ -33,7 +33,7 @@ const WeOffer = () => {
       <ContentGap />
       <div className="grid grid-cols-4 gap-[24px]">
         {WeOFferData?.map((data, index) => (
-          <Magnatic>
+          <Magnatic key={index}>
             <TransitionWrapper2 key={index} index={index}>
               <div className="hover:shadow-2xl px-[40px] py-[50px] transition-all duration-300">
                 <Image

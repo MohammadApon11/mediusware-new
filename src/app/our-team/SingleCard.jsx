@@ -1,47 +1,36 @@
 "use client";
-import React, { useContext } from "react";
-import profileBg from "../../assets/team/profileBg.png";
-import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
 import { InfoContext } from "@/providers/context";
-
+import React, { useContext } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import memberVector from "../../assets/team/memberVector.png";
 const SingleCard = ({ member }) => {
-  
   const { setMember } = useContext(InfoContext);
-
+  const { image, name, designation } = member;
   return (
-    <div className="text-center flex items-center flex-col">
+    <div className="group w-[400px] h-[420px] overflow-hidden rounded-[12px]">
       <Link
         onClick={() => setMember(member)}
-        href={`our-team/${member?.name.split(" ").join("-")}`}
-        className="bg-cover bg-center w-[264px] h-[274px] flex items-center justify-center group"
-        style={{
-          backgroundImage: `url(${profileBg.src})`,
-        }}
+        href={`our-team/${name.split(" ").join("-")}`}
+        className="relative"
       >
         <Image
-          className="w-[210px] h-[210px] rounded-full group-hover:scale-110 transition-all duration-300"
-          src={member?.image}
-          width={300}
-          height={300}
+          className="w-[400px] h-[420px] rounded-[8px] group-hover:scale-110 transition-all duration-300"
+          src={image}
+          width={400}
+          height={450}
         />
+        <Image
+          className="absolute bottom-0 left-0 "
+          src={memberVector}
+          width={280}
+          height={250}
+        />
+        <div className="text-white font-semibold absolute bottom-[24px] left-[24px]  w-[200px]">
+          <h1 className="text-[24px]">{name}</h1>
+          <p className="mt-[8px] text-[18px]">{designation}</p>
+        </div>
       </Link>
-      <div className="mt-[60px] text-primary text-center">
-        <Link
-          onClick={() => setMember(member)}
-          href={`our-team/${member?.name}`}
-          className="text-[22px] font-semibold hover:text-[#00A88E]"
-        >
-          {member?.name}
-        </Link>
-        <p className="text-[14px]">{member?.designation}</p>
-        {member?.name === "Md Shahinur Rahman" && (
-          <Link href={"https://www.linkedin.com/in/shahinur-mw/"}>
-            <FaLinkedin className="hover:text-[#00A88E] hover:scale-125 transition-all duration-300 mx-auto mt-[20px]" />
-          </Link>
-        )}
-      </div>
     </div>
   );
 };

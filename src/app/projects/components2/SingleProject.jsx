@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const SingleProject = ({ project }) => {
-  const { title, technology, projectImage, industry, path } = project;
+  const { title, technology, cardImage, industry, path } = project;
   return (
     <Link
       href={`projects/${path}`}
@@ -11,7 +11,7 @@ const SingleProject = ({ project }) => {
     >
       <Image
         className="w-[544px] h-[588px] bg-cover bg-center group-hover:scale-110 transition-all duration-300"
-        src={project.projectImage}
+        src={cardImage}
         width={544}
         height={588}
       />

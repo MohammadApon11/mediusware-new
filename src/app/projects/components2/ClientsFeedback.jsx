@@ -5,7 +5,6 @@ import quote from "../../../assets/all/quotes.png";
 import { IoMdStar } from "react-icons/io";
 import {
   TransitionWrapper1,
-  TransitionWrapper2,
 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const ClientsFeedback = () => {
