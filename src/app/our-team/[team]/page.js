@@ -6,7 +6,7 @@ import heroImg from "../../../assets/team/teamHero1.jpg";
 import ServicesHero from "@/app/services/components/ServicesHero";
 import SectionsGap from "@/components/shared/gap's/SectionsGap";
 import Image from "next/image";
-import Footer from "@/components/shared/Footer";
+import Inner from "@/components/shared/wrapper's/motion/Inner";
 
 const TeamMember = () => {
   const { member } = useContext(InfoContext);
@@ -17,7 +17,7 @@ const TeamMember = () => {
     description2: "",
   };
   return (
-    <div>
+    <Inner>
       <PaddingTop />
       <ServicesHero data={data} />
       <SectionsGap />
@@ -31,7 +31,7 @@ const TeamMember = () => {
         </div>
       </div>
       <SectionsGap />
-    </div>
+    </Inner>
   );
 };
 

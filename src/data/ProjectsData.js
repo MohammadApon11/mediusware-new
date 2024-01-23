@@ -9,10 +9,10 @@ import project6 from "../assets/projects/6-removebg-preview.png";
 // card image
 import card1 from "../assets/projects/card1.jpg";
 import card2 from "../assets/projects/card2.jpg";
-import card3 from "../assets/projects/card1.jpg";
-import card4 from "../assets/projects/card2.jpg";
-import card5 from "../assets/projects/card1.jpg";
-import card6 from "../assets/projects/card2.jpg";
+import card3 from "../assets/projects/card3.jpg";
+import card4 from "../assets/projects/card4.jpg";
+import card5 from "../assets/projects/card5.jpg";
+import card6 from "../assets/projects/card6.jpg";
 
 // tech images
 import backend1 from "../assets/tech/1.png";
@@ -90,7 +90,7 @@ export const ProjectsData = [
     industry: "ERP",
     path: "galileo",
     title: "GALILEO",
-   
+
     cardImage: card2,
     projectImage: project2,
     description1: "Galileo is an HR management project for",
@@ -124,7 +124,7 @@ export const ProjectsData = [
     ],
     projectSummary:
       "Galileo was one of the largest SASS projects we have ever worked on. Though it was a difficult task, we worked effectively enough to finish it smoothly. The best thing about this project was that our client was very helpful as well. Our effective communication contributed directly to the successful completion of this project. Along with all functionalities, Galileo was a smooth experience for our client. We have to say, working with them has been a pleasing experience for us.",
-    technology: [backend1, frontend3, framework1, serverSide1],
+    technology: [backend2, frontend3, framework2, serverSide2],
     backend: [backend1, backend2, backend3],
     frontend: [frontend3],
     frameworks: [framework1, framework2],
@@ -137,8 +137,8 @@ export const ProjectsData = [
     industry: "STREAM",
     path: "info-stream-web",
     title: "INFO STREAM WEB",
-   
-    cardImage: card1,
+
+    cardImage: card3,
     projectImage: project3,
     description1:
       "Scorecard is a Digital Marketing management system, that shows an overview",
@@ -167,7 +167,7 @@ export const ProjectsData = [
     softArchitect: ["Frontend (Laravel blade)", "Backend (Laravel)"],
     projectSummary:
       "To sum up, Scoreboard is a complete management system for digital marketers. It is a one-hand solution to manage clients. Rest apart, a detailed reporting system with all the necessary data customers want is a big release for digital marketing. We are really happy to make something very effective and useful.",
-    technology: [backend1, frontend2, framework1, serverSide1],
+    technology: [backend1, frontend3, framework3, serverSide2],
     backend: [backend1, backend2],
     frontend: [frontend2, frontend3, frontend4],
     frameworks: [framework1, framework2, framework3],
@@ -180,8 +180,8 @@ export const ProjectsData = [
     industry: "E-Commerce",
     path: "product-advisor",
     title: "PRODUCT ADVISOR",
-   
-    cardImage: card1,
+
+    cardImage: card4,
     projectImage: project4,
     description1:
       "Product Advisor is a top-level affiliate web app, which delivers support to advanced API ",
@@ -216,8 +216,8 @@ export const ProjectsData = [
     ],
     projectSummary:
       "This project was one of our best works ever. The project delivered a huge success to us and led us to a huge boost.",
-    technology: [backend1, frontend1, framework1, serverSide1],
-    backend: [backend1, backend2, backend3],
+    technology: [frontend4, backend1, framework3, serverSide4],
+    backend: [backend3, backend2, backend3],
     frontend: [frontend1, frontend2, frontend3, frontend4],
     frameworks: [framework1, framework2, framework3],
     serverSide: [serverSide1, serverSide2, serverSide3, serverSide4],
@@ -229,8 +229,8 @@ export const ProjectsData = [
     industry: "Services",
     path: "short-term-rental",
     title: "SHORT TERM RENTAL",
-   
-    cardImage: card1,
+
+    cardImage: card5,
     projectImage: project5,
     description1: "Short Term Rental is an app that helps to identify and",
     description2: "manage short-term rental properties.",
@@ -259,7 +259,7 @@ export const ProjectsData = [
     ],
     projectSummary:
       "Indeed, Short Term Rental is one of the most innovative projects we have ever worked on. We always try to make this project a major success, and we tried heart and soul for that. Definitely, we had to go through a lot of ups and downs while completing this project. Thanks to our team of skilled and dedicated warriors, we could satisfy our client with an effective and delighting offering.",
-    technology: [backend2, frontend2, framework1, serverSide4],
+    technology: [, frontend3, framework2, backend1, serverSide3],
     backend: [backend1, backend2],
     frontend: [frontend2, frontend3],
     frameworks: [framework1, framework2],
@@ -272,8 +272,8 @@ export const ProjectsData = [
     industry: "Edcucational",
     path: "woo-study",
     title: "WOO STUDY",
-   
-    cardImage: card1,
+
+    cardImage: card6,
     projectImage: project6,
     description1: "WooStudy is an Educational Networking platform in which",
     description2: "you can register yourself and apply for studying abroad,",
@@ -309,7 +309,7 @@ export const ProjectsData = [
     ],
     projectSummary:
       "To summarize, we dedicated ourselves to the fullest to helping WooStudy become one of the best global Edtech platforms. Providing Real-time chat, easy sign-up, massive information, and a lot of other features, we contributed to the efficiency of the company. Indeed, it has been a great experience to work with such a client who contributes so much to society.",
-    technology: [backend2, frontend2, framework1, serverSide4],
+    technology: [backend2, frontend2, framework3, serverSide2],
     backend: [backend1, backend2, backend3],
     frontend: [frontend2, frontend3],
     frameworks: [framework1, framework2, framework3],

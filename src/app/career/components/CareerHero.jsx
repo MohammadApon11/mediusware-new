@@ -1,15 +1,23 @@
+"use client";
 import React from "react";
 import heroAnimation from "../../../assets/animation/enterprise.json";
 import { FaToolbox } from "react-icons/fa";
-import ArrowBtn from "./ArrowBtn";
 import LottieAnimation from "@/app/services/components/LottieAnimation";
 import Image from "next/image";
 import position1 from "../../../assets/career/overlay-1.png";
 import position2 from "../../../assets/career/overlay-2.png";
 import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
 import Reveal from "@/components/shared/wrapper's/motion/Reveal";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Link as ScrollLink, animateScroll } from "react-scroll";
 
 const CareerHero = () => {
+  const handleButtonClick = () => {
+    animateScroll.scrollTo(300, {
+      duration: 500, // You can adjust the scroll duration as per your preference
+      smooth: "easeInOutQuad", // You can adjust the easing function as per your preference
+    });
+  };
   return (
     <div className="relative py-[70px] bg-slate-200">
       <Image
@@ -48,9 +56,17 @@ const CareerHero = () => {
                 career@mediusware.com
               </Reveal>
             </div>
-            <Reveal>
-              <ArrowBtn path={""}>Open Positions</ArrowBtn>
-            </Reveal>
+            {/* <Reveal> */}
+            <ScrollLink to="jobCard" smooth={true} duration={500}>
+              <button
+                className="btn-bg flex items-center gap-[12px]"
+                onClick={() => handleButtonClick()}
+              >
+                Open Positions <FaArrowRightLong />
+              </button>
+            </ScrollLink>
+
+            {/* </Reveal> */}
           </div>
           <div>
             <LottieAnimation anime={heroAnimation}></LottieAnimation>

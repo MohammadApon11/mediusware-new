@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../styles/common.css";
-import heroImage from "../../../assets/commonHero/marketing.png";
+import heroImage from "../../../assets/commonHero/marketing.jpg";
 import { FaBoxArchive } from "react-icons/fa6";
 import { MdOutlineWatchLater } from "react-icons/md";
 import Reveal from "@/components/shared/wrapper's/motion/Reveal";

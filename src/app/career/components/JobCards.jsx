@@ -6,7 +6,6 @@ import { SlCalender } from "react-icons/sl";
 import { IoArrowForwardSharp } from "react-icons/io5";
 import Link from "next/link";
 import NormalSectionWrapper from "@/components/shared/wrapper's/NormalSectionWrapper";
-import RightLeft from "@/components/shared/wrapper's/motion/RightLeft";
 import { TransitionWrapper1 } from "@/components/shared/wrapper's/motion/TransitionWrapper";
 
 const JobCards = () => {

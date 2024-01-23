@@ -7,7 +7,7 @@ const Features = ({ data }) => {
   const { anime, features } = data;
   return (
     <NormalSectionWrapper>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between" id="fetures">
         <div>
           <h1 className="text-[40px] text-primary font-semibold">
             Key <span className="text-secondary">Features</span>

@@ -7,7 +7,6 @@ import { SubNavData } from "@/data/NavData";
 
 const NavLink = ({ item, index }) => {
   const activeRoute = usePathname();
-  // console.log(activeRoute);
   return (
     <div
       key={index}
@@ -21,13 +20,13 @@ const NavLink = ({ item, index }) => {
           item.path === "/services" &&
           "flex items-center xl:gap-1 lg:-gap-[3px] "
         } ${
-          (activeRoute === "/" && "text-black") ||
+          (activeRoute === "/" && "text-primary") ||
           (activeRoute === `${item.path}` && "text-secondary")
         }`}
       >
         <span
           className={`bigMon:text-[20px] 2xl:text-[17px] lg:text-[14px] relative group-hover:after:content-[''] group-hover:after:bg-[#00A88E] group-hover:after:h-[3px] after:w-[0%] group-hover:after:left-0 group-hover:after:-bottom-[5px] group-hover:after:rounded-xl group-hover:after:absolute group-hover:after:w-[100%] group-hover:after:duration-700 ${
-            (activeRoute === "/" && "text-black") ||
+            (activeRoute === "/" && "text-primary") ||
             (activeRoute === `${item.path}` &&
               "after:content-[''] after:bg-[#00A88E] after:h-[3px] after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:w-[100%] after:duration-700")
           }`}
@@ -40,19 +39,20 @@ const NavLink = ({ item, index }) => {
       </Link>
       {item.title === "SERVICES" && (
         <div
-          className="absolute top-[96px] left-[-20%] w-[300px] rounded-[7px]  transition-all duration-200 invisible group-hover:visible transform scale-0 group-hover:scale-100 
+          className="absolute top-[96px] -left-[100%] w-[630px] rounded-[7px]  transition-all duration-200 invisible group-hover:visible transform scale-0 group-hover:scale-100 
          ease-in-out origin-top"
         >
-          <div className="flex flex-col border-[1px] border-[#00A88E]  bg-white rounded-[5px] py-3 pl-[20px]">
+          <div className="grid grid-cols-2 gap-x-[15px] gap-y-[7px]  border-[1px] border-[#00A88E]  bg-white rounded-[5px] py-3 pl-[20px]">
             {SubNavData?.map((item, index) => (
               <Link
-                className={`hover:text-[#00A88E] px-[8px] py-[12px] text-primary ${
+                className={`hover:text-[#00A88E] px-[8px] py-[12px] text-primary flex items-center gap-[10px] ${
                   activeRoute === `/services${item.path}` && "text-secondary"
                 }`}
                 href={`/services${item.path}`}
                 key={index}
               >
-                {item.title}
+               <span className="text-[20px]">{item?.icon}</span>
+                {item?.title}
               </Link>
             ))}
           </div>

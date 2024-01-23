@@ -1,7 +1,7 @@
 import img1 from "../assets/team/1.jpg";
 import img2 from "../assets/team/2.jpg";
 import img3 from "../assets/team/3.jpg";
-import img4 from "../assets/team/4.png";
+import img4 from "../assets/team/4.jpg";
 import img5 from "../assets/team/5.jpg";
 import img6 from "../assets/team/6.jpg";
 import img7 from "../assets/team/7.jpg";
@@ -10,17 +10,17 @@ import img9 from "../assets/team/9.jpg";
 import img10 from "../assets/team/10.jpg";
 import img11 from "../assets/team/11.jpg";
 import img12 from "../assets/team/12.jpg";
-import img13 from "../assets/team/13.jpeg";
+import img13 from "../assets/team/13.jpg";
 import img14 from "../assets/team/14.jpg";
 import img15 from "../assets/team/15.jpg";
 import img16 from "../assets/team/16.jpg";
 import img17 from "../assets/team/17.jpg";
-import img18 from "../assets/team/18.jpeg";
+import img18 from "../assets/team/18.jpg";
 import img19 from "../assets/team/19.jpg";
 import img20 from "../assets/team/20.jpg";
 import img21 from "../assets/team/21.jpg";
 import img22 from "../assets/team/22.jpg";
-import img23 from "../assets/team/23.jpeg";
+import img23 from "../assets/team/23.jpg";
 import img24 from "../assets/team/24.jpg";
 import img25 from "../assets/team/25.jpg";
 import img26 from "../assets/team/26.jpg";
@@ -40,16 +40,16 @@ import img39 from "../assets/team/39.jpg";
 import img40 from "../assets/team/40.jpg";
 import img41 from "../assets/team/41.jpg";
 import img42 from "../assets/team/42.jpg";
-import img43 from "../assets/team/43.png";
+import img43 from "../assets/team/43.jpg";
 import img44 from "../assets/team/44.jpg";
 import img45 from "../assets/team/45.jpg";
-import img46 from "../assets/team/46.png";
-import img47 from "../assets/team/47.jpeg";
-import img48 from "../assets/team/48.png";
-import img49 from "../assets/team/49.png";
+import img46 from "../assets/team/46.jpg";
+import img47 from "../assets/team/47.jpg";
+import img48 from "../assets/team/48.jpg";
+import img49 from "../assets/team/49.jpg";
 import img50 from "../assets/team/50.jpg";
 import img51 from "../assets/team/51.jpg";
-import img52 from "../assets/team/52.jpeg";
+import img52 from "../assets/team/52.jpg";
 import img53 from "../assets/team/53.jpg";
 import img54 from "../assets/team/54.jpg";
 import img55 from "../assets/team/55.jpg";
@@ -72,11 +72,11 @@ import img71 from "../assets/team/71.jpg";
 import img72 from "../assets/team/72.jpg";
 import img73 from "../assets/team/73.jpg";
 import img74 from "../assets/team/74.jpg";
-import img75 from "../assets/team/75.png";
+import img75 from "../assets/team/75.jpg";
 import img76 from "../assets/team/76.jpg";
-import img77 from "../assets/team/77.jpeg";
+import img77 from "../assets/team/77.jpg";
 import img78 from "../assets/team/78.jpg";
-import img79 from "../assets/team/79.png";
+import img79 from "../assets/team/79.jpg";
 import img80 from "../assets/team/80.jpg";
 
 export const TeamData = [
@@ -470,7 +470,7 @@ export const TeamData = [
   },
   {
     id: 69,
-    name: "MD ZAKIR HOSSAIN BHUIYAN",
+    name: "MD ZAKIR HOSSAIN",
     designation: "Software Engineer Trainee",
     image: img69,
   },
@@ -500,7 +500,7 @@ export const TeamData = [
   },
   {
     id: 74,
-    name: "Md Nadim Mahmud Chowdhury",
+    name: "Md Nadim Chowdhury",
     designation: "Software Engineer Trainee",
     image: img74,
   },

@@ -8,14 +8,14 @@ const SingleCard = ({ member }) => {
   const { setMember } = useContext(InfoContext);
   const { image, name, designation } = member;
   return (
-    <div className="group w-[400px] h-[420px] overflow-hidden rounded-[12px]">
+    <div className="group w-[400px] h-[460px] overflow-hidden rounded-[12px]">
       <Link
         onClick={() => setMember(member)}
         href={`our-team/${name.split(" ").join("-")}`}
         className="relative"
       >
         <Image
-          className="w-[400px] h-[420px] rounded-[8px] group-hover:scale-110 transition-all duration-300"
+          className="w-full h-full rounded-[8px] group-hover:scale-110 transition-all duration-300"
           src={image}
           width={400}
           height={450}
