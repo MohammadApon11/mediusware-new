@@ -4,9 +4,11 @@ import React from "react";
 import { FaAngleDown } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { SubNavData } from "@/data/NavData";
+import { useRouter } from "next/router";
 
 const NavLink = ({ item, index }) => {
   const activeRoute = usePathname();
+  
   return (
     <div
       key={index}

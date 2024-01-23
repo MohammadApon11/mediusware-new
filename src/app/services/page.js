@@ -14,7 +14,6 @@ const ServicesPage = () => {
         title1={"WE PROVIDE THIS"}
         title2={"IT SOLUTIONS"}
       />
-      <SectionsGap />
       <Services />
     </Inner>
   );
